@@ -71,6 +71,8 @@ namespace RestaurantManager
             this.textBoxLogin.Size = new System.Drawing.Size(400, 36);
             this.textBoxLogin.TabIndex = 1;
             this.textBoxLogin.Text = "Login";
+            this.textBoxLogin.Enter += new System.EventHandler(this.textBoxLogin_Enter);
+            this.textBoxLogin.Leave += new System.EventHandler(this.textBoxLogin_Leave);
             // 
             // textBoxHaslo
             // 
@@ -81,6 +83,8 @@ namespace RestaurantManager
             this.textBoxHaslo.Size = new System.Drawing.Size(400, 36);
             this.textBoxHaslo.TabIndex = 2;
             this.textBoxHaslo.Text = "Hasło";
+            this.textBoxHaslo.Enter += new System.EventHandler(this.textBoxHaslo_Enter);
+            this.textBoxHaslo.Leave += new System.EventHandler(this.textBoxHaslo_Leave);
             // 
             // textBoxPowHaslo
             // 
@@ -91,6 +95,8 @@ namespace RestaurantManager
             this.textBoxPowHaslo.Size = new System.Drawing.Size(400, 36);
             this.textBoxPowHaslo.TabIndex = 3;
             this.textBoxPowHaslo.Text = "Powtórz hasło";
+            this.textBoxPowHaslo.Enter += new System.EventHandler(this.textBoxPowHaslo_Enter);
+            this.textBoxPowHaslo.Leave += new System.EventHandler(this.textBoxPowHaslo_Leave);
             // 
             // textBoxImie
             // 
@@ -101,6 +107,8 @@ namespace RestaurantManager
             this.textBoxImie.Size = new System.Drawing.Size(400, 36);
             this.textBoxImie.TabIndex = 4;
             this.textBoxImie.Text = "Imię";
+            this.textBoxImie.Enter += new System.EventHandler(this.textBoxImie_Enter);
+            this.textBoxImie.Leave += new System.EventHandler(this.textBoxImie_Leave);
             // 
             // textBoxNazwisko
             // 
@@ -111,6 +119,8 @@ namespace RestaurantManager
             this.textBoxNazwisko.Size = new System.Drawing.Size(400, 36);
             this.textBoxNazwisko.TabIndex = 5;
             this.textBoxNazwisko.Text = "Nazwisko";
+            this.textBoxNazwisko.Enter += new System.EventHandler(this.textBoxNazwisko_Enter);
+            this.textBoxNazwisko.Leave += new System.EventHandler(this.textBoxNazwisko_Leave);
             // 
             // textBoxEmail
             // 
@@ -121,6 +131,8 @@ namespace RestaurantManager
             this.textBoxEmail.Size = new System.Drawing.Size(400, 36);
             this.textBoxEmail.TabIndex = 6;
             this.textBoxEmail.Text = "Email";
+            this.textBoxEmail.Enter += new System.EventHandler(this.textBoxEmail_Enter);
+            this.textBoxEmail.Leave += new System.EventHandler(this.textBoxEmail_Leave);
             // 
             // textBoxTelefon
             // 
@@ -131,6 +143,8 @@ namespace RestaurantManager
             this.textBoxTelefon.Size = new System.Drawing.Size(400, 36);
             this.textBoxTelefon.TabIndex = 7;
             this.textBoxTelefon.Text = "Numer telefonu";
+            this.textBoxTelefon.Enter += new System.EventHandler(this.textBoxTelefon_Enter);
+            this.textBoxTelefon.Leave += new System.EventHandler(this.textBoxTelefon_Leave);
             // 
             // btnUtworzKonto
             // 

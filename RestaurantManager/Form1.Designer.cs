@@ -31,8 +31,8 @@ namespace RestaurantManager
         {
             this.lblRestaurantManager = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnUtworzKonto = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.btnUtworzKonto = new System.Windows.Forms.Button();
             this.textBoxLogin = new System.Windows.Forms.TextBox();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
@@ -47,7 +47,7 @@ namespace RestaurantManager
             this.lblRestaurantManager.Name = "lblRestaurantManager";
             this.lblRestaurantManager.Size = new System.Drawing.Size(1100, 140);
             this.lblRestaurantManager.TabIndex = 0;
-            this.lblRestaurantManager.Text = "Restaurant Manager";
+            this.lblRestaurantManager.Text = "Lion Bistro";
             this.lblRestaurantManager.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
@@ -60,17 +60,6 @@ namespace RestaurantManager
             this.panel1.Size = new System.Drawing.Size(1100, 50);
             this.panel1.TabIndex = 1;
             // 
-            // btnUtworzKonto
-            // 
-            this.btnUtworzKonto.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnUtworzKonto.Location = new System.Drawing.Point(0, 0);
-            this.btnUtworzKonto.Name = "btnUtworzKonto";
-            this.btnUtworzKonto.Size = new System.Drawing.Size(200, 50);
-            this.btnUtworzKonto.TabIndex = 0;
-            this.btnUtworzKonto.Text = "Utwórz konto";
-            this.btnUtworzKonto.UseVisualStyleBackColor = true;
-            this.btnUtworzKonto.Click += new System.EventHandler(this.btnUtworzKonto_Click);
-            // 
             // btnExit
             // 
             this.btnExit.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -82,6 +71,17 @@ namespace RestaurantManager
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // btnUtworzKonto
+            // 
+            this.btnUtworzKonto.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnUtworzKonto.Location = new System.Drawing.Point(0, 0);
+            this.btnUtworzKonto.Name = "btnUtworzKonto";
+            this.btnUtworzKonto.Size = new System.Drawing.Size(200, 50);
+            this.btnUtworzKonto.TabIndex = 0;
+            this.btnUtworzKonto.Text = "Utwórz konto";
+            this.btnUtworzKonto.UseVisualStyleBackColor = true;
+            this.btnUtworzKonto.Click += new System.EventHandler(this.btnUtworzKonto_Click);
+            // 
             // textBoxLogin
             // 
             this.textBoxLogin.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -91,6 +91,8 @@ namespace RestaurantManager
             this.textBoxLogin.Size = new System.Drawing.Size(358, 45);
             this.textBoxLogin.TabIndex = 2;
             this.textBoxLogin.Text = "Login";
+            this.textBoxLogin.Enter += new System.EventHandler(this.textBoxLogin_Enter);
+            this.textBoxLogin.Leave += new System.EventHandler(this.textBoxLogin_Leave);
             // 
             // textBoxPassword
             // 
@@ -101,6 +103,8 @@ namespace RestaurantManager
             this.textBoxPassword.Size = new System.Drawing.Size(358, 45);
             this.textBoxPassword.TabIndex = 3;
             this.textBoxPassword.Text = "Hasło";
+            this.textBoxPassword.Enter += new System.EventHandler(this.textBoxPassword_Enter);
+            this.textBoxPassword.Leave += new System.EventHandler(this.textBoxPassword_Leave);
             // 
             // btnLogin
             // 
@@ -111,6 +115,7 @@ namespace RestaurantManager
             this.btnLogin.TabIndex = 6;
             this.btnLogin.Text = "Zaloguj";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // Form1
             // 
