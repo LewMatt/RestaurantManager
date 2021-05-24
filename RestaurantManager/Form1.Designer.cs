@@ -35,8 +35,6 @@ namespace RestaurantManager
             this.btnExit = new System.Windows.Forms.Button();
             this.textBoxLogin = new System.Windows.Forms.TextBox();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
-            this.lblLogin = new System.Windows.Forms.Label();
-            this.lblHaslo = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -71,6 +69,7 @@ namespace RestaurantManager
             this.btnUtworzKonto.TabIndex = 0;
             this.btnUtworzKonto.Text = "Utwórz konto";
             this.btnUtworzKonto.UseVisualStyleBackColor = true;
+            this.btnUtworzKonto.Click += new System.EventHandler(this.btnUtworzKonto_Click);
             // 
             // btnExit
             // 
@@ -81,6 +80,7 @@ namespace RestaurantManager
             this.btnExit.TabIndex = 1;
             this.btnExit.Text = "Wyjście";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // textBoxLogin
             // 
@@ -102,26 +102,6 @@ namespace RestaurantManager
             this.textBoxPassword.TabIndex = 3;
             this.textBoxPassword.Text = "Hasło";
             // 
-            // lblLogin
-            // 
-            this.lblLogin.AutoSize = true;
-            this.lblLogin.Font = new System.Drawing.Font("Segoe Print", 21.75F, System.Drawing.FontStyle.Bold);
-            this.lblLogin.Location = new System.Drawing.Point(256, 233);
-            this.lblLogin.Name = "lblLogin";
-            this.lblLogin.Size = new System.Drawing.Size(109, 51);
-            this.lblLogin.TabIndex = 4;
-            this.lblLogin.Text = "Login:";
-            // 
-            // lblHaslo
-            // 
-            this.lblHaslo.AutoSize = true;
-            this.lblHaslo.Font = new System.Drawing.Font("Segoe Print", 21.75F, System.Drawing.FontStyle.Bold);
-            this.lblHaslo.Location = new System.Drawing.Point(254, 335);
-            this.lblHaslo.Name = "lblHaslo";
-            this.lblHaslo.Size = new System.Drawing.Size(110, 51);
-            this.lblHaslo.TabIndex = 5;
-            this.lblHaslo.Text = "Hasło:";
-            // 
             // btnLogin
             // 
             this.btnLogin.Font = new System.Drawing.Font("Segoe Print", 18F);
@@ -138,8 +118,6 @@ namespace RestaurantManager
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1100, 700);
             this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.lblHaslo);
-            this.Controls.Add(this.lblLogin);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.textBoxLogin);
             this.Controls.Add(this.panel1);
@@ -162,8 +140,6 @@ namespace RestaurantManager
         private System.Windows.Forms.Button btnUtworzKonto;
         private System.Windows.Forms.TextBox textBoxLogin;
         private System.Windows.Forms.TextBox textBoxPassword;
-        private System.Windows.Forms.Label lblLogin;
-        private System.Windows.Forms.Label lblHaslo;
         private System.Windows.Forms.Button btnLogin;
     }
 }

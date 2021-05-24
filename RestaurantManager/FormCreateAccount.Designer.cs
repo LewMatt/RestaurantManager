@@ -60,6 +60,7 @@ namespace RestaurantManager
             this.btnPowrot.TabIndex = 0;
             this.btnPowrot.Text = "Powrót";
             this.btnPowrot.UseVisualStyleBackColor = true;
+            this.btnPowrot.Click += new System.EventHandler(this.btnPowrot_Click);
             // 
             // textBoxLogin
             // 

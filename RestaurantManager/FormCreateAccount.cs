@@ -16,5 +16,17 @@ namespace RestaurantManager
         {
             InitializeComponent();
         }
+
+        private void btnPowrot_Click(object sender, EventArgs e)
+        {
+            textBoxLogin.Text = "";
+            textBoxHaslo.Text = "";
+            textBoxPowHaslo.Text = "";
+            textBoxImie.Text = "";
+            textBoxNazwisko.Text = "";
+            textBoxEmail.Text = "";
+            textBoxTelefon.Text = "";
+            this.Close();
+        }
     }
 }

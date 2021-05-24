@@ -16,5 +16,21 @@ namespace RestaurantManager
         {
             InitializeComponent();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
+
+        private void btnUtworzKonto_Click(object sender, EventArgs e)
+        {
+            FormCreateAccount fCreAcc = new FormCreateAccount();
+
+            fCreAcc.Show();
+            fCreAcc.BringToFront();
+
+        }
+        
+
     }
 }
