@@ -12,6 +12,9 @@ namespace RestaurantManager
 {
     public partial class FormMenu : Form
     {
+        public string logged_user = "";
+        public int logged_user_id;
+
         public FormMenu()
         {
             InitializeComponent();
@@ -20,6 +23,11 @@ namespace RestaurantManager
         private void btnWyloguj_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnMojeDane_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

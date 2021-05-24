@@ -17,6 +17,8 @@ namespace RestaurantManager
             InitializeComponent();
         }
 
+        Form1 form1obj = new Form1();
+
         private void btnPowrot_Click(object sender, EventArgs e)
         {
             textBoxLogin.Text = "";
@@ -156,6 +158,66 @@ namespace RestaurantManager
             {
                 textBoxTelefon.Text = "Numer telefonu";
                 textBoxTelefon.ForeColor = Color.Gray;
+            }
+        }
+
+        private void btnUtworzKonto_Click(object sender, EventArgs e)
+        {
+            string new_login = textBoxLogin.Text;
+            string new_password = textBoxHaslo.Text;
+            string new_pass_again = textBoxPowHaslo.Text;
+            string new_fname = textBoxImie.Text;
+            string new_lname = textBoxNazwisko.Text;
+            string new_email = textBoxEmail.Text;
+            string new_phone = textBoxTelefon.Text;
+
+            string query = "SELECT COUNT(*) FROM users WHERE login LIKE '" + new_login + "'";
+
+            int result = int.Parse(form1obj.sendQueryRetString(query));
+
+            if (textBoxLogin.Text == "")
+            {
+                MessageBox.Show("Wprowadź login.");
+            }
+            if (result == 1)
+            {
+                MessageBox.Show("Login zajęty.");
+                textBoxLogin.Text = "";
+            }
+            else
+            {
+                if (new_password == "")
+                {
+                    MessageBox.Show("Wprowadź hasło.");
+                }
+                else
+                {
+                    if (new_password != new_pass_again)
+                    {
+                        MessageBox.Show("Powtórz poprawnie hasło.");
+                        textBoxHaslo.Text = "";
+                        textBoxPowHaslo.Text = "";
+                    }
+                    else
+                    {
+                        if (int.TryParse(new_phone, out int x) == false)
+                        {
+                            MessageBox.Show("Wprowadź poprawny numer telefonu.");
+                            textBoxTelefon.Text = "";
+                        }
+                        else
+                        {
+                            string q = "SELECT COUNT(*) FROM users";
+                            string ile_uz = form1obj.sendQueryRetString(q);
+                            int new_id = int.Parse(ile_uz) + 1;
+                            q = "INSERT INTO `users` (`user_id`, `login`, `password`, `first_name`, `last_name`, `email`, `phone_number`) VALUES ('" + new_id + "', '" + new_login + "', '" + new_password + "', '" + new_fname + "', '" + new_lname + "', '" + new_email + "', '" + new_phone + "')";
+                            string trash_res = form1obj.sendQueryRetString(q);
+
+                            MessageBox.Show("Konto utworzone.");
+                            this.Close();
+                        }
+                    }
+                }
             }
         }
     }

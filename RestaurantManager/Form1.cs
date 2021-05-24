@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data;
+using MySql.Data.MySqlClient;
 
 namespace RestaurantManager
 {
@@ -70,10 +72,98 @@ namespace RestaurantManager
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            FormMenu fMenu = new FormMenu();
+            string query = "SELECT COUNT(*) FROM users WHERE login like '" + textBoxLogin.Text + "' AND password like '" + textBoxPassword.Text + "'";
+            string result = "";
 
-            fMenu.Show();
-            fMenu.BringToFront();
+            result = sendQueryRetString(query);
+            int res = int.Parse(result);
+
+            if (res == 1)
+            {
+                query = "SELECT user_id FROM users WHERE login LIKE '" + textBoxLogin.Text + "'";
+                int id = int.Parse(sendQueryRetString(query));
+                MessageBox.Show("Zalogowano");
+                FormMenu fMenu = new FormMenu();
+                fMenu.logged_user = textBoxLogin.Text;
+                fMenu.logged_user_id = id;
+                this.textBoxLogin.Text = "";
+                this.textBoxPassword.Text = "";
+                fMenu.Show();
+                fMenu.BringToFront();
+            }
+            else
+            {
+                MessageBox.Show("Błędny login lub hasło");
+            }
+        }
+
+        public class DBConnection
+        {
+            private DBConnection()
+            {
+            }
+
+            private string databaseName = string.Empty;
+            public string DatabaseName
+            {
+                get { return databaseName; }
+                set { databaseName = value; }
+            }
+
+            public string Password { get; set; }
+            private MySqlConnection connection = null;
+            public MySqlConnection Connection
+            {
+                get { return connection; }
+            }
+
+            private static DBConnection _instance = null;
+            public static DBConnection Instance()
+            {
+                if (_instance == null)
+                    _instance = new DBConnection();
+                return _instance;
+            }
+
+            public bool IsConnect()
+            {
+                if (Connection == null)
+                {
+                    if (String.IsNullOrEmpty(databaseName))
+                        return false;
+                    string connstring = string.Format("Server=localhost; database={0}; UID=root; password=", databaseName);
+                    connection = new MySqlConnection(connstring);
+                    connection.Open();
+                }
+
+                return true;
+            }
+
+            public void Close()
+            {
+                connection.Close();
+                connection = null;
+            }
+        }
+
+        public string sendQueryRetString(string query)
+        {
+            string someStringFromColumnZero = "";
+            string result = "";
+            var dbCon = DBConnection.Instance();
+            dbCon.DatabaseName = "db_restaurant_manager";
+            if (dbCon.IsConnect())
+            {
+                var cmd = new MySqlCommand(query, dbCon.Connection);
+                var reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    someStringFromColumnZero = reader.GetString(0);
+                    result = someStringFromColumnZero;
+                }
+                dbCon.Close();
+            }
+            return result;
         }
     }
 }

@@ -155,6 +155,7 @@ namespace RestaurantManager
             this.btnUtworzKonto.TabIndex = 8;
             this.btnUtworzKonto.Text = "Utwórz konto";
             this.btnUtworzKonto.UseVisualStyleBackColor = true;
+            this.btnUtworzKonto.Click += new System.EventHandler(this.btnUtworzKonto_Click);
             // 
             // FormCreateAccount
             // 
