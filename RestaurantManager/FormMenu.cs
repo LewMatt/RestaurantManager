@@ -18,6 +18,8 @@ namespace RestaurantManager
         public FormMenu()
         {
             InitializeComponent();
+
+            userControlDanieDnia1.BringToFront();
         }
 
         private void btnWyloguj_Click(object sender, EventArgs e)
@@ -28,6 +30,16 @@ namespace RestaurantManager
         private void btnMojeDane_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnDanieDnia_Click(object sender, EventArgs e)
+        {
+            userControlDanieDnia1.BringToFront();
+        }
+
+        private void btnPizza_Click(object sender, EventArgs e)
+        {
+            userControlPizza1.BringToFront();
         }
     }
 }

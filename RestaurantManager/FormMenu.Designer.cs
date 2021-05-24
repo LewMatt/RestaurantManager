@@ -39,8 +39,10 @@ namespace RestaurantManager
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnKoszyk = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnWyloguj = new System.Windows.Forms.Button();
             this.btnMojeDane = new System.Windows.Forms.Button();
+            this.btnWyloguj = new System.Windows.Forms.Button();
+            this.userControlPizza1 = new RestaurantManager.UserControlPizza();
+            this.userControlDanieDnia1 = new RestaurantManager.UserControlDanieDnia();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -109,6 +111,7 @@ namespace RestaurantManager
             this.btnPizza.TabIndex = 1;
             this.btnPizza.Text = "Pizza";
             this.btnPizza.UseVisualStyleBackColor = true;
+            this.btnPizza.Click += new System.EventHandler(this.btnPizza_Click);
             // 
             // btnDanieDnia
             // 
@@ -119,6 +122,7 @@ namespace RestaurantManager
             this.btnDanieDnia.TabIndex = 0;
             this.btnDanieDnia.Text = "Danie dnia";
             this.btnDanieDnia.UseVisualStyleBackColor = true;
+            this.btnDanieDnia.Click += new System.EventHandler(this.btnDanieDnia_Click);
             // 
             // panel2
             // 
@@ -149,17 +153,6 @@ namespace RestaurantManager
             this.panel3.Size = new System.Drawing.Size(900, 50);
             this.panel3.TabIndex = 2;
             // 
-            // btnWyloguj
-            // 
-            this.btnWyloguj.Font = new System.Drawing.Font("Segoe Print", 14.25F);
-            this.btnWyloguj.Location = new System.Drawing.Point(800, 0);
-            this.btnWyloguj.Name = "btnWyloguj";
-            this.btnWyloguj.Size = new System.Drawing.Size(100, 50);
-            this.btnWyloguj.TabIndex = 0;
-            this.btnWyloguj.Text = "Wyloguj";
-            this.btnWyloguj.UseVisualStyleBackColor = true;
-            this.btnWyloguj.Click += new System.EventHandler(this.btnWyloguj_Click);
-            // 
             // btnMojeDane
             // 
             this.btnMojeDane.Font = new System.Drawing.Font("Segoe Print", 14.25F);
@@ -171,11 +164,38 @@ namespace RestaurantManager
             this.btnMojeDane.UseVisualStyleBackColor = true;
             this.btnMojeDane.Click += new System.EventHandler(this.btnMojeDane_Click);
             // 
+            // btnWyloguj
+            // 
+            this.btnWyloguj.Font = new System.Drawing.Font("Segoe Print", 14.25F);
+            this.btnWyloguj.Location = new System.Drawing.Point(800, 0);
+            this.btnWyloguj.Name = "btnWyloguj";
+            this.btnWyloguj.Size = new System.Drawing.Size(100, 50);
+            this.btnWyloguj.TabIndex = 0;
+            this.btnWyloguj.Text = "Wyloguj";
+            this.btnWyloguj.UseVisualStyleBackColor = true;
+            this.btnWyloguj.Click += new System.EventHandler(this.btnWyloguj_Click);
+            // 
+            // userControlPizza1
+            // 
+            this.userControlPizza1.Location = new System.Drawing.Point(200, 100);
+            this.userControlPizza1.Name = "userControlPizza1";
+            this.userControlPizza1.Size = new System.Drawing.Size(900, 550);
+            this.userControlPizza1.TabIndex = 4;
+            // 
+            // userControlDanieDnia1
+            // 
+            this.userControlDanieDnia1.Location = new System.Drawing.Point(200, 100);
+            this.userControlDanieDnia1.Name = "userControlDanieDnia1";
+            this.userControlDanieDnia1.Size = new System.Drawing.Size(900, 550);
+            this.userControlDanieDnia1.TabIndex = 3;
+            // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1100, 700);
+            this.Controls.Add(this.userControlPizza1);
+            this.Controls.Add(this.userControlDanieDnia1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -204,5 +224,7 @@ namespace RestaurantManager
         private System.Windows.Forms.Button btnPizza;
         private System.Windows.Forms.Button btnDanieDnia;
         private System.Windows.Forms.Button btnMojeDane;
+        private UserControlDanieDnia userControlDanieDnia1;
+        private UserControlPizza userControlPizza1;
     }
 }
