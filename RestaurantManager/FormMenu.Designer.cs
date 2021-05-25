@@ -41,8 +41,12 @@ namespace RestaurantManager
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnMojeDane = new System.Windows.Forms.Button();
             this.btnWyloguj = new System.Windows.Forms.Button();
+            this.userControlPrzekaski1 = new RestaurantManager.UserControlPrzekaski();
+            this.userControlZupy1 = new RestaurantManager.UserControlZupy();
+            this.userControlDaniaGlowne1 = new RestaurantManager.UserControlDaniaGlowne();
             this.userControlPizza1 = new RestaurantManager.UserControlPizza();
             this.userControlDanieDnia1 = new RestaurantManager.UserControlDanieDnia();
+            this.userControlNapoje1 = new RestaurantManager.UserControlNapoje();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -71,6 +75,7 @@ namespace RestaurantManager
             this.btnNapoje.TabIndex = 5;
             this.btnNapoje.Text = "Napoje";
             this.btnNapoje.UseVisualStyleBackColor = true;
+            this.btnNapoje.Click += new System.EventHandler(this.btnNapoje_Click);
             // 
             // btnPrzekaski
             // 
@@ -81,6 +86,7 @@ namespace RestaurantManager
             this.btnPrzekaski.TabIndex = 4;
             this.btnPrzekaski.Text = "Przekąski";
             this.btnPrzekaski.UseVisualStyleBackColor = true;
+            this.btnPrzekaski.Click += new System.EventHandler(this.btnPrzekaski_Click);
             // 
             // btnZupy
             // 
@@ -91,6 +97,7 @@ namespace RestaurantManager
             this.btnZupy.TabIndex = 3;
             this.btnZupy.Text = "Zupy";
             this.btnZupy.UseVisualStyleBackColor = true;
+            this.btnZupy.Click += new System.EventHandler(this.btnZupy_Click);
             // 
             // btnDaniaGlowne
             // 
@@ -101,6 +108,7 @@ namespace RestaurantManager
             this.btnDaniaGlowne.TabIndex = 2;
             this.btnDaniaGlowne.Text = "Dania główne";
             this.btnDaniaGlowne.UseVisualStyleBackColor = true;
+            this.btnDaniaGlowne.Click += new System.EventHandler(this.btnDaniaGlowne_Click);
             // 
             // btnPizza
             // 
@@ -175,6 +183,27 @@ namespace RestaurantManager
             this.btnWyloguj.UseVisualStyleBackColor = true;
             this.btnWyloguj.Click += new System.EventHandler(this.btnWyloguj_Click);
             // 
+            // userControlPrzekaski1
+            // 
+            this.userControlPrzekaski1.Location = new System.Drawing.Point(200, 100);
+            this.userControlPrzekaski1.Name = "userControlPrzekaski1";
+            this.userControlPrzekaski1.Size = new System.Drawing.Size(900, 550);
+            this.userControlPrzekaski1.TabIndex = 7;
+            // 
+            // userControlZupy1
+            // 
+            this.userControlZupy1.Location = new System.Drawing.Point(200, 100);
+            this.userControlZupy1.Name = "userControlZupy1";
+            this.userControlZupy1.Size = new System.Drawing.Size(900, 550);
+            this.userControlZupy1.TabIndex = 6;
+            // 
+            // userControlDaniaGlowne1
+            // 
+            this.userControlDaniaGlowne1.Location = new System.Drawing.Point(200, 100);
+            this.userControlDaniaGlowne1.Name = "userControlDaniaGlowne1";
+            this.userControlDaniaGlowne1.Size = new System.Drawing.Size(900, 550);
+            this.userControlDaniaGlowne1.TabIndex = 5;
+            // 
             // userControlPizza1
             // 
             this.userControlPizza1.Location = new System.Drawing.Point(200, 100);
@@ -189,11 +218,22 @@ namespace RestaurantManager
             this.userControlDanieDnia1.Size = new System.Drawing.Size(900, 550);
             this.userControlDanieDnia1.TabIndex = 3;
             // 
+            // userControlNapoje1
+            // 
+            this.userControlNapoje1.Location = new System.Drawing.Point(200, 100);
+            this.userControlNapoje1.Name = "userControlNapoje1";
+            this.userControlNapoje1.Size = new System.Drawing.Size(900, 550);
+            this.userControlNapoje1.TabIndex = 8;
+            // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1100, 700);
+            this.Controls.Add(this.userControlNapoje1);
+            this.Controls.Add(this.userControlPrzekaski1);
+            this.Controls.Add(this.userControlZupy1);
+            this.Controls.Add(this.userControlDaniaGlowne1);
             this.Controls.Add(this.userControlPizza1);
             this.Controls.Add(this.userControlDanieDnia1);
             this.Controls.Add(this.panel3);
@@ -226,5 +266,9 @@ namespace RestaurantManager
         private System.Windows.Forms.Button btnMojeDane;
         private UserControlDanieDnia userControlDanieDnia1;
         private UserControlPizza userControlPizza1;
+        private UserControlDaniaGlowne userControlDaniaGlowne1;
+        private UserControlZupy userControlZupy1;
+        private UserControlPrzekaski userControlPrzekaski1;
+        private UserControlNapoje userControlNapoje1;
     }
 }

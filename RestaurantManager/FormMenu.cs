@@ -41,5 +41,25 @@ namespace RestaurantManager
         {
             userControlPizza1.BringToFront();
         }
+
+        private void btnDaniaGlowne_Click(object sender, EventArgs e)
+        {
+            userControlDaniaGlowne1.BringToFront();
+        }
+
+        private void btnZupy_Click(object sender, EventArgs e)
+        {
+            userControlZupy1.BringToFront();
+        }
+
+        private void btnPrzekaski_Click(object sender, EventArgs e)
+        {
+            userControlPrzekaski1.BringToFront();
+        }
+
+        private void btnNapoje_Click(object sender, EventArgs e)
+        {
+            userControlNapoje1.BringToFront();
+        }
     }
 }
