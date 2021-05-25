@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace RestaurantManager
 {
     public partial class FormCreateAccount : Form
@@ -170,12 +171,13 @@ namespace RestaurantManager
             string new_lname = textBoxNazwisko.Text;
             string new_email = textBoxEmail.Text;
             string new_phone = textBoxTelefon.Text;
+            
 
             string query = "SELECT COUNT(*) FROM users WHERE login LIKE '" + new_login + "'";
 
             int result = int.Parse(form1obj.sendQueryRetString(query));
 
-            if (textBoxLogin.Text == "")
+            if (new_login == "Login" || new_login == "")
             {
                 MessageBox.Show("Wprowadź login.");
             }
@@ -186,7 +188,7 @@ namespace RestaurantManager
             }
             else
             {
-                if (new_password == "")
+                if (new_password == "" || new_password == "Hasło")
                 {
                     MessageBox.Show("Wprowadź hasło.");
                 }
