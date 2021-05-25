@@ -41,12 +41,14 @@ namespace RestaurantManager
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnMojeDane = new System.Windows.Forms.Button();
             this.btnWyloguj = new System.Windows.Forms.Button();
+            this.userControlKoszyk1 = new RestaurantManager.UserControlKoszyk();
+            this.userControlNapoje1 = new RestaurantManager.UserControlNapoje();
             this.userControlPrzekaski1 = new RestaurantManager.UserControlPrzekaski();
             this.userControlZupy1 = new RestaurantManager.UserControlZupy();
             this.userControlDaniaGlowne1 = new RestaurantManager.UserControlDaniaGlowne();
             this.userControlPizza1 = new RestaurantManager.UserControlPizza();
             this.userControlDanieDnia1 = new RestaurantManager.UserControlDanieDnia();
-            this.userControlNapoje1 = new RestaurantManager.UserControlNapoje();
+            this.userControlMojeDane1 = new RestaurantManager.UserControlMojeDane();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -150,6 +152,7 @@ namespace RestaurantManager
             this.btnKoszyk.TabIndex = 0;
             this.btnKoszyk.Text = "Koszyk";
             this.btnKoszyk.UseVisualStyleBackColor = true;
+            this.btnKoszyk.Click += new System.EventHandler(this.btnKoszyk_Click);
             // 
             // panel3
             // 
@@ -182,6 +185,20 @@ namespace RestaurantManager
             this.btnWyloguj.Text = "Wyloguj";
             this.btnWyloguj.UseVisualStyleBackColor = true;
             this.btnWyloguj.Click += new System.EventHandler(this.btnWyloguj_Click);
+            // 
+            // userControlKoszyk1
+            // 
+            this.userControlKoszyk1.Location = new System.Drawing.Point(200, 100);
+            this.userControlKoszyk1.Name = "userControlKoszyk1";
+            this.userControlKoszyk1.Size = new System.Drawing.Size(900, 550);
+            this.userControlKoszyk1.TabIndex = 9;
+            // 
+            // userControlNapoje1
+            // 
+            this.userControlNapoje1.Location = new System.Drawing.Point(200, 100);
+            this.userControlNapoje1.Name = "userControlNapoje1";
+            this.userControlNapoje1.Size = new System.Drawing.Size(900, 550);
+            this.userControlNapoje1.TabIndex = 8;
             // 
             // userControlPrzekaski1
             // 
@@ -218,18 +235,20 @@ namespace RestaurantManager
             this.userControlDanieDnia1.Size = new System.Drawing.Size(900, 550);
             this.userControlDanieDnia1.TabIndex = 3;
             // 
-            // userControlNapoje1
+            // userControlMojeDane1
             // 
-            this.userControlNapoje1.Location = new System.Drawing.Point(200, 100);
-            this.userControlNapoje1.Name = "userControlNapoje1";
-            this.userControlNapoje1.Size = new System.Drawing.Size(900, 550);
-            this.userControlNapoje1.TabIndex = 8;
+            this.userControlMojeDane1.Location = new System.Drawing.Point(200, 100);
+            this.userControlMojeDane1.Name = "userControlMojeDane1";
+            this.userControlMojeDane1.Size = new System.Drawing.Size(900, 550);
+            this.userControlMojeDane1.TabIndex = 10;
             // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1100, 700);
+            this.Controls.Add(this.userControlMojeDane1);
+            this.Controls.Add(this.userControlKoszyk1);
             this.Controls.Add(this.userControlNapoje1);
             this.Controls.Add(this.userControlPrzekaski1);
             this.Controls.Add(this.userControlZupy1);
@@ -270,5 +289,7 @@ namespace RestaurantManager
         private UserControlZupy userControlZupy1;
         private UserControlPrzekaski userControlPrzekaski1;
         private UserControlNapoje userControlNapoje1;
+        private UserControlKoszyk userControlKoszyk1;
+        private UserControlMojeDane userControlMojeDane1;
     }
 }

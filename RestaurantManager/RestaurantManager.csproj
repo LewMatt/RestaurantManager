@@ -121,6 +121,18 @@
     <Compile Include="UserControlDanieDnia.Designer.cs">
       <DependentUpon>UserControlDanieDnia.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlKoszyk.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlKoszyk.Designer.cs">
+      <DependentUpon>UserControlKoszyk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlMojeDane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlMojeDane.Designer.cs">
+      <DependentUpon>UserControlMojeDane.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlNapoje.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -168,6 +180,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlDanieDnia.resx">
       <DependentUpon>UserControlDanieDnia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlKoszyk.resx">
+      <DependentUpon>UserControlKoszyk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlMojeDane.resx">
+      <DependentUpon>UserControlMojeDane.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlNapoje.resx">
       <DependentUpon>UserControlNapoje.cs</DependentUpon>

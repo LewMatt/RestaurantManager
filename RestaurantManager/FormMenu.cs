@@ -29,7 +29,7 @@ namespace RestaurantManager
 
         private void btnMojeDane_Click(object sender, EventArgs e)
         {
-
+            userControlMojeDane1.BringToFront();
         }
 
         private void btnDanieDnia_Click(object sender, EventArgs e)
@@ -60,6 +60,11 @@ namespace RestaurantManager
         private void btnNapoje_Click(object sender, EventArgs e)
         {
             userControlNapoje1.BringToFront();
+        }
+
+        private void btnKoszyk_Click(object sender, EventArgs e)
+        {
+            userControlKoszyk1.BringToFront();
         }
     }
 }
