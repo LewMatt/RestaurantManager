@@ -53,7 +53,7 @@ namespace RestaurantManager
             // 
             // btnPowrot
             // 
-            this.btnPowrot.Font = new System.Drawing.Font("Segoe Print", 12F);
+            this.btnPowrot.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnPowrot.Location = new System.Drawing.Point(1000, 0);
             this.btnPowrot.Name = "btnPowrot";
             this.btnPowrot.Size = new System.Drawing.Size(100, 50);
@@ -148,7 +148,7 @@ namespace RestaurantManager
             // 
             // btnUtworzKonto
             // 
-            this.btnUtworzKonto.Font = new System.Drawing.Font("Segoe Print", 14.25F);
+            this.btnUtworzKonto.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnUtworzKonto.Location = new System.Drawing.Point(425, 560);
             this.btnUtworzKonto.Name = "btnUtworzKonto";
             this.btnUtworzKonto.Size = new System.Drawing.Size(250, 50);

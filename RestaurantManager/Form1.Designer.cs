@@ -43,6 +43,7 @@ namespace RestaurantManager
             // 
             this.lblRestaurantManager.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblRestaurantManager.Font = new System.Drawing.Font("Segoe Print", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblRestaurantManager.ForeColor = System.Drawing.Color.Black;
             this.lblRestaurantManager.Location = new System.Drawing.Point(0, 0);
             this.lblRestaurantManager.Name = "lblRestaurantManager";
             this.lblRestaurantManager.Size = new System.Drawing.Size(1100, 140);
@@ -108,7 +109,7 @@ namespace RestaurantManager
             // 
             // btnLogin
             // 
-            this.btnLogin.Font = new System.Drawing.Font("Segoe Print", 18F);
+            this.btnLogin.Font = new System.Drawing.Font("Segoe Print", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnLogin.Location = new System.Drawing.Point(425, 480);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(250, 50);

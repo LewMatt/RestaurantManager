@@ -29,23 +29,88 @@ namespace RestaurantManager
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblPrzekaski = new System.Windows.Forms.Label();
+            this.listViewPrzekaski = new System.Windows.Forms.ListView();
+            this.hNazwa = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.hCena = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lblIleSztuk = new System.Windows.Forms.Label();
+            this.textBoxIleSztuk = new System.Windows.Forms.TextBox();
+            this.btnDodajDoKoszyka = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // lblPrzekaski
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(402, 72);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Przekaski";
+            this.lblPrzekaski.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblPrzekaski.Font = new System.Drawing.Font("Segoe Print", 20.25F);
+            this.lblPrzekaski.Location = new System.Drawing.Point(0, 0);
+            this.lblPrzekaski.Name = "lblPrzekaski";
+            this.lblPrzekaski.Size = new System.Drawing.Size(900, 100);
+            this.lblPrzekaski.TabIndex = 1;
+            this.lblPrzekaski.Text = "Przekąski";
+            this.lblPrzekaski.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // listViewPrzekaski
+            // 
+            this.listViewPrzekaski.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.hNazwa,
+            this.hCena});
+            this.listViewPrzekaski.HideSelection = false;
+            this.listViewPrzekaski.Location = new System.Drawing.Point(100, 150);
+            this.listViewPrzekaski.Name = "listViewPrzekaski";
+            this.listViewPrzekaski.Size = new System.Drawing.Size(405, 300);
+            this.listViewPrzekaski.TabIndex = 3;
+            this.listViewPrzekaski.UseCompatibleStateImageBehavior = false;
+            this.listViewPrzekaski.View = System.Windows.Forms.View.Details;
+            // 
+            // hNazwa
+            // 
+            this.hNazwa.Text = "Nazwa";
+            this.hNazwa.Width = 320;
+            // 
+            // hCena
+            // 
+            this.hCena.Text = "Cena (zł)";
+            this.hCena.Width = 80;
+            // 
+            // lblIleSztuk
+            // 
+            this.lblIleSztuk.AutoSize = true;
+            this.lblIleSztuk.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblIleSztuk.Location = new System.Drawing.Point(600, 230);
+            this.lblIleSztuk.Name = "lblIleSztuk";
+            this.lblIleSztuk.Size = new System.Drawing.Size(62, 25);
+            this.lblIleSztuk.TabIndex = 5;
+            this.lblIleSztuk.Text = "Ilość:";
+            // 
+            // textBoxIleSztuk
+            // 
+            this.textBoxIleSztuk.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxIleSztuk.Location = new System.Drawing.Point(700, 227);
+            this.textBoxIleSztuk.Name = "textBoxIleSztuk";
+            this.textBoxIleSztuk.Size = new System.Drawing.Size(100, 31);
+            this.textBoxIleSztuk.TabIndex = 6;
+            // 
+            // btnDodajDoKoszyka
+            // 
+            this.btnDodajDoKoszyka.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnDodajDoKoszyka.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnDodajDoKoszyka.ForeColor = System.Drawing.Color.White;
+            this.btnDodajDoKoszyka.Location = new System.Drawing.Point(600, 320);
+            this.btnDodajDoKoszyka.Name = "btnDodajDoKoszyka";
+            this.btnDodajDoKoszyka.Size = new System.Drawing.Size(200, 50);
+            this.btnDodajDoKoszyka.TabIndex = 7;
+            this.btnDodajDoKoszyka.Text = "Dodaj do koszyka";
+            this.btnDodajDoKoszyka.UseVisualStyleBackColor = false;
             // 
             // UserControlPrzekaski
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnDodajDoKoszyka);
+            this.Controls.Add(this.textBoxIleSztuk);
+            this.Controls.Add(this.lblIleSztuk);
+            this.Controls.Add(this.listViewPrzekaski);
+            this.Controls.Add(this.lblPrzekaski);
             this.Name = "UserControlPrzekaski";
             this.Size = new System.Drawing.Size(900, 550);
             this.ResumeLayout(false);
@@ -55,6 +120,12 @@ namespace RestaurantManager
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblPrzekaski;
+        private System.Windows.Forms.ListView listViewPrzekaski;
+        private System.Windows.Forms.ColumnHeader hNazwa;
+        private System.Windows.Forms.ColumnHeader hCena;
+        private System.Windows.Forms.Label lblIleSztuk;
+        private System.Windows.Forms.TextBox textBoxIleSztuk;
+        private System.Windows.Forms.Button btnDodajDoKoszyka;
     }
 }
