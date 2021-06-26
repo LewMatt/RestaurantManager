@@ -165,5 +165,62 @@ namespace RestaurantManager
             }
             return result;
         }
+
+        public static List<ListViewItem> sendQueryRetPizzaList(string query)
+        {
+            List<ListViewItem> lista = new List<ListViewItem>();
+
+            var dbCon = DBConnection.Instance();
+            dbCon.DatabaseName = "db_restaurant_manager";
+            if (dbCon.IsConnect())
+            {
+                var cmd = new MySqlCommand(query, dbCon.Connection);
+                var reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    int ile = reader.FieldCount;
+
+                    for (int i = 1; i < ile; i += 6)
+                    {
+                        ListViewItem item = new ListViewItem();
+                        item.Text = reader.GetString(i);
+                        item.SubItems.Add(reader.GetString(i + 1));
+                        item.SubItems.Add(reader.GetString(i + 2));
+                        item.SubItems.Add(reader.GetString(i + 3));
+                        item.SubItems.Add(reader.GetString(i + 4));
+                        lista.Add(item);
+                    }
+                }
+                dbCon.Close();
+            }
+            return lista;
+        }
+
+        public static List<ListViewItem> sendQueryRetDishesList(string query)
+        {
+            List<ListViewItem> lista = new List<ListViewItem>();
+
+            var dbCon = DBConnection.Instance();
+            dbCon.DatabaseName = "db_restaurant_manager";
+            if (dbCon.IsConnect())
+            {
+                var cmd = new MySqlCommand(query, dbCon.Connection);
+                var reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    int ile = reader.FieldCount;
+
+                    for (int i = 1; i < ile; i += 3)
+                    {
+                        ListViewItem item = new ListViewItem();
+                        item.Text = reader.GetString(i);
+                        item.SubItems.Add(reader.GetString(i + 1));
+                        lista.Add(item);
+                    }
+                }
+                dbCon.Close();
+            }
+            return lista;
+        }
     }
 }

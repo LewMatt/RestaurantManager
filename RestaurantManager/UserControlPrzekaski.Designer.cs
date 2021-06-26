@@ -121,11 +121,11 @@ namespace RestaurantManager
         #endregion
 
         private System.Windows.Forms.Label lblPrzekaski;
-        private System.Windows.Forms.ListView listViewPrzekaski;
         private System.Windows.Forms.ColumnHeader hNazwa;
         private System.Windows.Forms.ColumnHeader hCena;
         private System.Windows.Forms.Label lblIleSztuk;
         private System.Windows.Forms.TextBox textBoxIleSztuk;
         private System.Windows.Forms.Button btnDodajDoKoszyka;
+        public System.Windows.Forms.ListView listViewPrzekaski;
     }
 }

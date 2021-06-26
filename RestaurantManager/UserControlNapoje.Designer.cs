@@ -30,7 +30,7 @@ namespace RestaurantManager
         private void InitializeComponent()
         {
             this.lblNapoje = new System.Windows.Forms.Label();
-            this.listViewPrzekaski = new System.Windows.Forms.ListView();
+            this.listViewNapoje = new System.Windows.Forms.ListView();
             this.hNazwa = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.hCena = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lblIleSztuk = new System.Windows.Forms.Label();
@@ -49,18 +49,18 @@ namespace RestaurantManager
             this.lblNapoje.Text = "Napoje";
             this.lblNapoje.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // listViewPrzekaski
+            // listViewNapoje
             // 
-            this.listViewPrzekaski.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.listViewNapoje.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.hNazwa,
             this.hCena});
-            this.listViewPrzekaski.HideSelection = false;
-            this.listViewPrzekaski.Location = new System.Drawing.Point(100, 150);
-            this.listViewPrzekaski.Name = "listViewPrzekaski";
-            this.listViewPrzekaski.Size = new System.Drawing.Size(405, 300);
-            this.listViewPrzekaski.TabIndex = 4;
-            this.listViewPrzekaski.UseCompatibleStateImageBehavior = false;
-            this.listViewPrzekaski.View = System.Windows.Forms.View.Details;
+            this.listViewNapoje.HideSelection = false;
+            this.listViewNapoje.Location = new System.Drawing.Point(100, 150);
+            this.listViewNapoje.Name = "listViewNapoje";
+            this.listViewNapoje.Size = new System.Drawing.Size(405, 300);
+            this.listViewNapoje.TabIndex = 4;
+            this.listViewNapoje.UseCompatibleStateImageBehavior = false;
+            this.listViewNapoje.View = System.Windows.Forms.View.Details;
             // 
             // hNazwa
             // 
@@ -109,7 +109,7 @@ namespace RestaurantManager
             this.Controls.Add(this.btnDodajDoKoszyka);
             this.Controls.Add(this.textBoxIleSztuk);
             this.Controls.Add(this.lblIleSztuk);
-            this.Controls.Add(this.listViewPrzekaski);
+            this.Controls.Add(this.listViewNapoje);
             this.Controls.Add(this.lblNapoje);
             this.Name = "UserControlNapoje";
             this.Size = new System.Drawing.Size(900, 550);
@@ -121,11 +121,11 @@ namespace RestaurantManager
         #endregion
 
         private System.Windows.Forms.Label lblNapoje;
-        private System.Windows.Forms.ListView listViewPrzekaski;
         private System.Windows.Forms.ColumnHeader hNazwa;
         private System.Windows.Forms.ColumnHeader hCena;
         private System.Windows.Forms.Label lblIleSztuk;
         private System.Windows.Forms.TextBox textBoxIleSztuk;
         private System.Windows.Forms.Button btnDodajDoKoszyka;
+        public System.Windows.Forms.ListView listViewNapoje;
     }
 }

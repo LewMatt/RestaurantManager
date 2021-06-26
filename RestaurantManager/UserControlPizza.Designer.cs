@@ -141,7 +141,6 @@ namespace RestaurantManager
         #endregion
 
         private System.Windows.Forms.Label lblPizza;
-        private System.Windows.Forms.ListView listViewPizza;
         private System.Windows.Forms.ColumnHeader hNazwa;
         private System.Windows.Forms.ColumnHeader hOpis;
         private System.Windows.Forms.ColumnHeader hCena30;
@@ -150,5 +149,6 @@ namespace RestaurantManager
         private System.Windows.Forms.Label lblIleSztuk;
         private System.Windows.Forms.TextBox textBoxIleSztuk;
         private System.Windows.Forms.Button btnDodajDoKoszyka;
+        public System.Windows.Forms.ListView listViewPizza;
     }
 }
