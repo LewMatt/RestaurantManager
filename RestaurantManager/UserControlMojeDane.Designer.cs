@@ -163,6 +163,7 @@ namespace RestaurantManager
             this.btnZmienEmail.TabIndex = 13;
             this.btnZmienEmail.Text = "Zmień email";
             this.btnZmienEmail.UseVisualStyleBackColor = true;
+            this.btnZmienEmail.Click += new System.EventHandler(this.btnZmienEmail_Click);
             // 
             // btnZmienTel
             // 
@@ -183,6 +184,7 @@ namespace RestaurantManager
             this.btnOdswiez.TabIndex = 15;
             this.btnOdswiez.Text = "Odśwież";
             this.btnOdswiez.UseVisualStyleBackColor = true;
+            this.btnOdswiez.Click += new System.EventHandler(this.btnOdswiez_Click);
             // 
             // UserControlMojeDane
             // 

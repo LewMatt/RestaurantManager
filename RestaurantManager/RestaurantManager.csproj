@@ -107,6 +107,12 @@
     <Compile Include="FormMenu.Designer.cs">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormZmienEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormZmienEmail.Designer.cs">
+      <DependentUpon>FormZmienEmail.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormZmienHaslo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,6 +182,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormZmienEmail.resx">
+      <DependentUpon>FormZmienEmail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormZmienHaslo.resx">
       <DependentUpon>FormZmienHaslo.cs</DependentUpon>
