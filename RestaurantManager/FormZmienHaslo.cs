@@ -15,6 +15,7 @@ namespace RestaurantManager
         public FormZmienHaslo()
         {
             InitializeComponent();
+            this.Select();
         }
 
         public int my_id;

@@ -15,6 +15,7 @@ namespace RestaurantManager
         public FormZmienEmail()
         {
             InitializeComponent();
+            this.Select();
         }
 
         public int my_id;

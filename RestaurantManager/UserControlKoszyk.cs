@@ -29,19 +29,27 @@ namespace RestaurantManager
             produktyKoszyk.Clear();
             listViewKoszyk.Items.Clear();
             suma_koszyk = 0;
-            lblCena.Text = "0zł";
+            lblCena.Text = "0 zł";
             MessageBox.Show("Wyczyszczono koszyk.");
         }
 
         private void btnZlozZamowienie_Click(object sender, EventArgs e)
         {
-            FormZlozZamowienie FZamow = new FormZlozZamowienie();
-            FZamow.produktyKoszyk = produktyKoszyk;
-            FZamow.my_id = my_id;
-            FZamow.cena_zamowienia = suma_koszyk;
+            if(produktyKoszyk.Count>0)
+            {
+                FormZlozZamowienie FZamow = new FormZlozZamowienie();
+                FZamow.produktyKoszyk = produktyKoszyk;
+                FZamow.my_id = my_id;
+                FZamow.cena_zamowienia = suma_koszyk;
 
-            FZamow.Show();
-            FZamow.BringToFront();
+                FZamow.Show();
+                FZamow.BringToFront();
+            }
+            else
+            {
+                MessageBox.Show("Brak produktów w koszyku.");
+            }
+            
         }
     }
 }
