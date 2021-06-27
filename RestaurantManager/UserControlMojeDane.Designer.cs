@@ -174,6 +174,7 @@ namespace RestaurantManager
             this.btnZmienTel.TabIndex = 14;
             this.btnZmienTel.Text = "Zmień nr telefonu";
             this.btnZmienTel.UseVisualStyleBackColor = true;
+            this.btnZmienTel.Click += new System.EventHandler(this.btnZmienTel_Click);
             // 
             // btnOdswiez
             // 

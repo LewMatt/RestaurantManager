@@ -53,5 +53,13 @@ namespace RestaurantManager
             string tel = Form1.sendQueryRetString(query);
             lblTelefonPokaz.Text = tel;
         }
+
+        private void btnZmienTel_Click(object sender, EventArgs e)
+        {
+            FormZmienTelefon fZmienTel = new FormZmienTelefon();
+            fZmienTel.my_id = my_id;
+            fZmienTel.Show();
+            fZmienTel.BringToFront();
+        }
     }
 }
