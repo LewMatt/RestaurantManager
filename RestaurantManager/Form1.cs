@@ -90,6 +90,7 @@ namespace RestaurantManager
                 this.textBoxPassword.Text = "";
                 fMenu.Show();
                 fMenu.BringToFront();
+                this.Hide();
             }
             else
             {

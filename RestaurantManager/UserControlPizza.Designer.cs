@@ -39,6 +39,9 @@ namespace RestaurantManager
             this.lblIleSztuk = new System.Windows.Forms.Label();
             this.textBoxIleSztuk = new System.Windows.Forms.TextBox();
             this.btnDodajDoKoszyka = new System.Windows.Forms.Button();
+            this.radioButton30cm = new System.Windows.Forms.RadioButton();
+            this.radioButton40cm = new System.Windows.Forms.RadioButton();
+            this.radioButton50cm = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // lblPizza
@@ -60,6 +63,7 @@ namespace RestaurantManager
             this.hCena30,
             this.hCena40,
             this.hCena50});
+            this.listViewPizza.FullRowSelect = true;
             this.listViewPizza.HideSelection = false;
             this.listViewPizza.Location = new System.Drawing.Point(100, 150);
             this.listViewPizza.Name = "listViewPizza";
@@ -121,11 +125,48 @@ namespace RestaurantManager
             this.btnDodajDoKoszyka.TabIndex = 5;
             this.btnDodajDoKoszyka.Text = "Dodaj do koszyka";
             this.btnDodajDoKoszyka.UseVisualStyleBackColor = false;
+            this.btnDodajDoKoszyka.Click += new System.EventHandler(this.btnDodajDoKoszyka_Click);
+            // 
+            // radioButton30cm
+            // 
+            this.radioButton30cm.AutoSize = true;
+            this.radioButton30cm.Location = new System.Drawing.Point(663, 168);
+            this.radioButton30cm.Name = "radioButton30cm";
+            this.radioButton30cm.Size = new System.Drawing.Size(51, 17);
+            this.radioButton30cm.TabIndex = 6;
+            this.radioButton30cm.TabStop = true;
+            this.radioButton30cm.Text = "30cm";
+            this.radioButton30cm.UseVisualStyleBackColor = true;
+            // 
+            // radioButton40cm
+            // 
+            this.radioButton40cm.AutoSize = true;
+            this.radioButton40cm.Location = new System.Drawing.Point(720, 168);
+            this.radioButton40cm.Name = "radioButton40cm";
+            this.radioButton40cm.Size = new System.Drawing.Size(51, 17);
+            this.radioButton40cm.TabIndex = 7;
+            this.radioButton40cm.TabStop = true;
+            this.radioButton40cm.Text = "40cm";
+            this.radioButton40cm.UseVisualStyleBackColor = true;
+            // 
+            // radioButton50cm
+            // 
+            this.radioButton50cm.AutoSize = true;
+            this.radioButton50cm.Location = new System.Drawing.Point(777, 168);
+            this.radioButton50cm.Name = "radioButton50cm";
+            this.radioButton50cm.Size = new System.Drawing.Size(51, 17);
+            this.radioButton50cm.TabIndex = 8;
+            this.radioButton50cm.TabStop = true;
+            this.radioButton50cm.Text = "50cm";
+            this.radioButton50cm.UseVisualStyleBackColor = true;
             // 
             // UserControlPizza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.radioButton50cm);
+            this.Controls.Add(this.radioButton40cm);
+            this.Controls.Add(this.radioButton30cm);
             this.Controls.Add(this.btnDodajDoKoszyka);
             this.Controls.Add(this.textBoxIleSztuk);
             this.Controls.Add(this.lblIleSztuk);
@@ -150,5 +191,8 @@ namespace RestaurantManager
         private System.Windows.Forms.TextBox textBoxIleSztuk;
         private System.Windows.Forms.Button btnDodajDoKoszyka;
         public System.Windows.Forms.ListView listViewPizza;
+        private System.Windows.Forms.RadioButton radioButton30cm;
+        private System.Windows.Forms.RadioButton radioButton40cm;
+        private System.Windows.Forms.RadioButton radioButton50cm;
     }
 }

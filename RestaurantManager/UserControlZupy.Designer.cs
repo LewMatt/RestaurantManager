@@ -54,6 +54,7 @@ namespace RestaurantManager
             this.listViewZupy.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.hNazwa,
             this.hCena});
+            this.listViewZupy.FullRowSelect = true;
             this.listViewZupy.HideSelection = false;
             this.listViewZupy.Location = new System.Drawing.Point(100, 150);
             this.listViewZupy.Name = "listViewZupy";
@@ -101,6 +102,7 @@ namespace RestaurantManager
             this.btnDodajDoKoszyka.TabIndex = 6;
             this.btnDodajDoKoszyka.Text = "Dodaj do koszyka";
             this.btnDodajDoKoszyka.UseVisualStyleBackColor = false;
+            this.btnDodajDoKoszyka.Click += new System.EventHandler(this.btnDodajDoKoszyka_Click);
             // 
             // UserControlZupy
             // 

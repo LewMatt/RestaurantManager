@@ -92,6 +92,7 @@ namespace RestaurantManager
             this.btnWyczyscKoszyk.TabIndex = 5;
             this.btnWyczyscKoszyk.Text = "Wyczyść koszyk";
             this.btnWyczyscKoszyk.UseVisualStyleBackColor = false;
+            this.btnWyczyscKoszyk.Click += new System.EventHandler(this.btnWyczyscKoszyk_Click);
             // 
             // btnZlozZamowienie
             // 

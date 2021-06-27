@@ -54,6 +54,7 @@ namespace RestaurantManager
             this.listViewNapoje.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.hNazwa,
             this.hCena});
+            this.listViewNapoje.FullRowSelect = true;
             this.listViewNapoje.HideSelection = false;
             this.listViewNapoje.Location = new System.Drawing.Point(100, 150);
             this.listViewNapoje.Name = "listViewNapoje";
@@ -101,6 +102,7 @@ namespace RestaurantManager
             this.btnDodajDoKoszyka.TabIndex = 8;
             this.btnDodajDoKoszyka.Text = "Dodaj do koszyka";
             this.btnDodajDoKoszyka.UseVisualStyleBackColor = false;
+            this.btnDodajDoKoszyka.Click += new System.EventHandler(this.btnDodajDoKoszyka_Click);
             // 
             // UserControlNapoje
             // 

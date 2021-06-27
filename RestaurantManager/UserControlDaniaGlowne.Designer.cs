@@ -54,6 +54,7 @@ namespace RestaurantManager
             this.listViewDaniaGlowne.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.hNazwa,
             this.hCena});
+            this.listViewDaniaGlowne.FullRowSelect = true;
             this.listViewDaniaGlowne.HideSelection = false;
             this.listViewDaniaGlowne.Location = new System.Drawing.Point(100, 150);
             this.listViewDaniaGlowne.Name = "listViewDaniaGlowne";
@@ -101,6 +102,7 @@ namespace RestaurantManager
             this.btnDodajDoKoszyka.TabIndex = 5;
             this.btnDodajDoKoszyka.Text = "Dodaj do koszyka";
             this.btnDodajDoKoszyka.UseVisualStyleBackColor = false;
+            this.btnDodajDoKoszyka.Click += new System.EventHandler(this.btnDodajDoKoszyka_Click);
             // 
             // UserControlDaniaGlowne
             // 

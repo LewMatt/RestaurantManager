@@ -54,6 +54,7 @@ namespace RestaurantManager
             this.listViewPrzekaski.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.hNazwa,
             this.hCena});
+            this.listViewPrzekaski.FullRowSelect = true;
             this.listViewPrzekaski.HideSelection = false;
             this.listViewPrzekaski.Location = new System.Drawing.Point(100, 150);
             this.listViewPrzekaski.Name = "listViewPrzekaski";
@@ -101,6 +102,7 @@ namespace RestaurantManager
             this.btnDodajDoKoszyka.TabIndex = 7;
             this.btnDodajDoKoszyka.Text = "Dodaj do koszyka";
             this.btnDodajDoKoszyka.UseVisualStyleBackColor = false;
+            this.btnDodajDoKoszyka.Click += new System.EventHandler(this.btnDodajDoKoszyka_Click);
             // 
             // UserControlPrzekaski
             // 
