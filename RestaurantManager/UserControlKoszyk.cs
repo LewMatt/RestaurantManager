@@ -14,6 +14,8 @@ namespace RestaurantManager
     {
         public int suma_koszyk { get; set; }
 
+        public int my_id;
+
         public UserControlKoszyk()
         {
             InitializeComponent();
@@ -29,6 +31,17 @@ namespace RestaurantManager
             suma_koszyk = 0;
             lblCena.Text = "0zł";
             MessageBox.Show("Wyczyszczono koszyk.");
+        }
+
+        private void btnZlozZamowienie_Click(object sender, EventArgs e)
+        {
+            FormZlozZamowienie FZamow = new FormZlozZamowienie();
+            FZamow.produktyKoszyk = produktyKoszyk;
+            FZamow.my_id = my_id;
+            FZamow.cena_zamowienia = suma_koszyk;
+
+            FZamow.Show();
+            FZamow.BringToFront();
         }
     }
 }

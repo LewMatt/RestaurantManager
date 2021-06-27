@@ -105,6 +105,7 @@ namespace RestaurantManager
             this.btnZlozZamowienie.TabIndex = 6;
             this.btnZlozZamowienie.Text = "Złóż zamówienie";
             this.btnZlozZamowienie.UseVisualStyleBackColor = false;
+            this.btnZlozZamowienie.Click += new System.EventHandler(this.btnZlozZamowienie_Click);
             // 
             // lblC
             // 

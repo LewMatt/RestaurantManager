@@ -201,6 +201,11 @@ namespace RestaurantManager
 
             userControlKoszyk1.lblCena.Text = userControlKoszyk1.suma_koszyk.ToString() + " zł";
 
+
+            //przekazanie id uzytkownika
+
+            userControlKoszyk1.my_id = logged_user_id;
+
             userControlKoszyk1.BringToFront();
         }
     }
