@@ -12,7 +12,7 @@ namespace RestaurantManager
 {
     public partial class FormMenu : Form
     {
-        public string logged_user = "";
+        
         public int logged_user_id;
 
         public FormMenu()
@@ -29,6 +29,24 @@ namespace RestaurantManager
 
         private void btnMojeDane_Click(object sender, EventArgs e)
         {
+            string query = "SELECT first_name FROM users WHERE user_id LIKE '" + logged_user_id.ToString() + "'";
+            string imie = Form1.sendQueryRetString(query);
+            userControlMojeDane1.lblPokazImie.Text = imie;
+
+            query = "SELECT last_name FROM users WHERE user_id LIKE '" + logged_user_id.ToString() + "'";
+            string nazwisko = Form1.sendQueryRetString(query);
+            userControlMojeDane1.lblPokazNazwisko.Text = nazwisko;
+
+            query = "SELECT email FROM users WHERE user_id LIKE '" + logged_user_id.ToString() + "'";
+            string email = Form1.sendQueryRetString(query);
+            userControlMojeDane1.lblPokazEmail.Text = email;
+
+            query = "SELECT phone_number FROM users WHERE user_id LIKE '" + logged_user_id.ToString() + "'";
+            string tel = Form1.sendQueryRetString(query);
+            userControlMojeDane1.lblTelefonPokaz.Text = tel;
+
+
+            userControlMojeDane1.my_id = logged_user_id;
             userControlMojeDane1.BringToFront();
         }
 

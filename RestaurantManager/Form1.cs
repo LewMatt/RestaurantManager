@@ -84,7 +84,6 @@ namespace RestaurantManager
                 int id = int.Parse(sendQueryRetString(query));
                 MessageBox.Show("Zalogowano");
                 FormMenu fMenu = new FormMenu();
-                fMenu.logged_user = textBoxLogin.Text;
                 fMenu.logged_user_id = id;
                 this.textBoxLogin.Text = "";
                 this.textBoxPassword.Text = "";
@@ -147,7 +146,7 @@ namespace RestaurantManager
             }
         }
 
-        public string sendQueryRetString(string query)
+        public static string sendQueryRetString(string query)
         {
             string someStringFromColumnZero = "";
             string result = "";

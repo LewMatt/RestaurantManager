@@ -16,5 +16,17 @@ namespace RestaurantManager
         {
             InitializeComponent();
         }
+
+        public int my_id;
+
+        private void btnZmienHaslo_Click(object sender, EventArgs e)
+        {
+            FormZmienHaslo fZmienHas = new FormZmienHaslo();
+            fZmienHas.my_id = my_id;
+            fZmienHas.Show();
+            fZmienHas.BringToFront();
+        }
+
+
     }
 }

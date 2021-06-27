@@ -18,8 +18,6 @@ namespace RestaurantManager
             InitializeComponent();
         }
 
-        Form1 form1obj = new Form1();
-
         private void btnPowrot_Click(object sender, EventArgs e)
         {
             textBoxLogin.Text = "";
@@ -175,7 +173,7 @@ namespace RestaurantManager
 
             string query = "SELECT COUNT(*) FROM users WHERE login LIKE '" + new_login + "'";
 
-            int result = int.Parse(form1obj.sendQueryRetString(query));
+            int result = int.Parse(Form1.sendQueryRetString(query));
 
             if (new_login == "Login" || new_login == "")
             {
@@ -210,10 +208,10 @@ namespace RestaurantManager
                         else
                         {
                             string q = "SELECT COUNT(*) FROM users";
-                            string ile_uz = form1obj.sendQueryRetString(q);
+                            string ile_uz = Form1.sendQueryRetString(q);
                             int new_id = int.Parse(ile_uz) + 1;
                             q = "INSERT INTO `users` (`user_id`, `login`, `password`, `first_name`, `last_name`, `email`, `phone_number`) VALUES ('" + new_id + "', '" + new_login + "', '" + new_password + "', '" + new_fname + "', '" + new_lname + "', '" + new_email + "', '" + new_phone + "')";
-                            string trash_res = form1obj.sendQueryRetString(q);
+                            string trash_res = Form1.sendQueryRetString(q);
 
                             MessageBox.Show("Konto utworzone.");
                             this.Close();

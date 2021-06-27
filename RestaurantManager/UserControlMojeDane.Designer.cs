@@ -152,6 +152,7 @@ namespace RestaurantManager
             this.btnZmienHaslo.TabIndex = 12;
             this.btnZmienHaslo.Text = "Zmień hasło";
             this.btnZmienHaslo.UseVisualStyleBackColor = true;
+            this.btnZmienHaslo.Click += new System.EventHandler(this.btnZmienHaslo_Click);
             // 
             // btnZmienEmail
             // 
@@ -176,7 +177,7 @@ namespace RestaurantManager
             // btnOdswiez
             // 
             this.btnOdswiez.Font = new System.Drawing.Font("Segoe Print", 14.25F);
-            this.btnOdswiez.Location = new System.Drawing.Point(375, 475);
+            this.btnOdswiez.Location = new System.Drawing.Point(375, 460);
             this.btnOdswiez.Name = "btnOdswiez";
             this.btnOdswiez.Size = new System.Drawing.Size(150, 60);
             this.btnOdswiez.TabIndex = 15;
@@ -214,13 +215,13 @@ namespace RestaurantManager
         private System.Windows.Forms.Label lblNazwisko;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblTelefon;
-        private System.Windows.Forms.Label lblPokazImie;
-        private System.Windows.Forms.Label lblPokazNazwisko;
-        private System.Windows.Forms.Label lblPokazEmail;
-        private System.Windows.Forms.Label lblTelefonPokaz;
         private System.Windows.Forms.Button btnZmienHaslo;
         private System.Windows.Forms.Button btnZmienEmail;
         private System.Windows.Forms.Button btnZmienTel;
         private System.Windows.Forms.Button btnOdswiez;
+        public System.Windows.Forms.Label lblPokazImie;
+        public System.Windows.Forms.Label lblPokazNazwisko;
+        public System.Windows.Forms.Label lblPokazEmail;
+        public System.Windows.Forms.Label lblTelefonPokaz;
     }
 }
