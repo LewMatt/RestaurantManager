@@ -216,6 +216,7 @@ namespace RestaurantManager
 
                             MessageBox.Show("Konto utworzone.");
                             Application.Restart();
+
                         }
                     }
                 }
