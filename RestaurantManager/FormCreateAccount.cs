@@ -210,7 +210,8 @@ namespace RestaurantManager
                             string q = "SELECT COUNT(*) FROM users";
                             string ile_uz = Form1.sendQueryRetString(q);
                             int new_id = int.Parse(ile_uz) + 1;
-                            q = "INSERT INTO `users` (`user_id`, `login`, `password`, `first_name`, `last_name`, `email`, `phone_number`) VALUES ('" + new_id + "', '" + new_login + "', '" + new_password + "', '" + new_fname + "', '" + new_lname + "', '" + new_email + "', '" + new_phone + "')";
+                            int user_type = 1;
+                            q = "INSERT INTO `users` (`user_id`, `login`, `password`, `first_name`, `last_name`, `email`, `phone_number`, `user_type`) VALUES ('" + new_id + "', '" + new_login + "', '" + new_password + "', '" + new_fname + "', '" + new_lname + "', '" + new_email + "', '" + new_phone + "', '"+user_type.ToString()+"')";
                             string trash_res = Form1.sendQueryRetString(q);
 
                             MessageBox.Show("Konto utworzone.");

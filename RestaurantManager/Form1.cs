@@ -80,16 +80,45 @@ namespace RestaurantManager
 
             if (res == 1)
             {
-                query = "SELECT user_id FROM users WHERE login LIKE '" + textBoxLogin.Text + "'";
-                int id = int.Parse(sendQueryRetString(query));
-                MessageBox.Show("Zalogowano");
-                FormMenu fMenu = new FormMenu();
-                fMenu.logged_user_id = id;
-                this.textBoxLogin.Text = "";
-                this.textBoxPassword.Text = "";
-                fMenu.Show();
-                fMenu.BringToFront();
-                this.Hide();
+                query = "SELECT user_type FROM users WHERE login LIKE '" + textBoxLogin.Text + "'";
+                result = sendQueryRetString(query);
+                res = int.Parse(result);
+                
+                if(res == 0)
+                {
+                    MessageBox.Show("Zalogowano");
+                    FormMenuAdmin fAdmin = new FormMenuAdmin();
+                    this.textBoxLogin.Text = "";
+                    this.textBoxPassword.Text = "";
+
+                    List<ListViewItem> lista = new List<ListViewItem>();
+                    query = "SELECT * FROM orders";
+                    lista = Form1.sendQueryRetOrdersList(query);
+
+                    fAdmin.listViewZamowienia.Items.Clear();
+
+                    foreach (ListViewItem item in lista)
+                    {
+                        fAdmin.listViewZamowienia.Items.Add(item);
+                    }
+
+                    fAdmin.Show();
+                    fAdmin.BringToFront();
+                    this.Hide();
+                }
+                else
+                {
+                    query = "SELECT user_id FROM users WHERE login LIKE '" + textBoxLogin.Text + "'";
+                    int id = int.Parse(sendQueryRetString(query));
+                    MessageBox.Show("Zalogowano");
+                    FormMenu fMenu = new FormMenu();
+                    fMenu.logged_user_id = id;
+                    this.textBoxLogin.Text = "";
+                    this.textBoxPassword.Text = "";
+                    fMenu.Show();
+                    fMenu.BringToFront();
+                    this.Hide();
+                }
             }
             else
             {
@@ -211,6 +240,61 @@ namespace RestaurantManager
                     int ile = reader.FieldCount;
 
                     for (int i = 1; i < ile; i += 3)
+                    {
+                        ListViewItem item = new ListViewItem();
+                        item.Text = reader.GetString(i);
+                        item.SubItems.Add(reader.GetString(i + 1));
+                        lista.Add(item);
+                    }
+                }
+                dbCon.Close();
+            }
+            return lista;
+        }
+
+        public static List<ListViewItem> sendQueryRetOrdersList(string query)
+        {
+            List<ListViewItem> lista = new List<ListViewItem>();
+
+            var dbCon = DBConnection.Instance();
+            dbCon.DatabaseName = "db_restaurant_manager";
+            if (dbCon.IsConnect())
+            {
+                var cmd = new MySqlCommand(query, dbCon.Connection);
+                var reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    int ile = reader.FieldCount;
+
+                    for (int i = 0; i < ile; i += 3)
+                    {
+                        ListViewItem item = new ListViewItem();
+                        item.Text = reader.GetString(i);
+                        item.SubItems.Add(reader.GetString(i + 1));
+                        item.SubItems.Add(reader.GetString(i + 2));
+                        lista.Add(item);
+                    }
+                }
+                dbCon.Close();
+            }
+            return lista;
+        }
+
+        public static List<ListViewItem> sendQueryRetOrderElementsList(string query)
+        {
+            List<ListViewItem> lista = new List<ListViewItem>();
+
+            var dbCon = DBConnection.Instance();
+            dbCon.DatabaseName = "db_restaurant_manager";
+            if (dbCon.IsConnect())
+            {
+                var cmd = new MySqlCommand(query, dbCon.Connection);
+                var reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    int ile = reader.FieldCount;
+
+                    for (int i = 1; i < ile; i += 4)
                     {
                         ListViewItem item = new ListViewItem();
                         item.Text = reader.GetString(i);
