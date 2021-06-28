@@ -215,7 +215,7 @@ namespace RestaurantManager
                             string trash_res = Form1.sendQueryRetString(q);
 
                             MessageBox.Show("Konto utworzone.");
-                            this.Close();
+                            Application.Restart();
                         }
                     }
                 }
