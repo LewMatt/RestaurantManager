@@ -41,6 +41,7 @@ namespace RestaurantManager
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnMojeDane = new System.Windows.Forms.Button();
             this.btnWyloguj = new System.Windows.Forms.Button();
+            this.userControlMojeDane1 = new RestaurantManager.UserControlMojeDane();
             this.userControlKoszyk1 = new RestaurantManager.UserControlKoszyk();
             this.userControlNapoje1 = new RestaurantManager.UserControlNapoje();
             this.userControlPrzekaski1 = new RestaurantManager.UserControlPrzekaski();
@@ -48,7 +49,7 @@ namespace RestaurantManager
             this.userControlDaniaGlowne1 = new RestaurantManager.UserControlDaniaGlowne();
             this.userControlPizza1 = new RestaurantManager.UserControlPizza();
             this.userControlDanieDnia1 = new RestaurantManager.UserControlDanieDnia();
-            this.userControlMojeDane1 = new RestaurantManager.UserControlMojeDane();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -144,6 +145,7 @@ namespace RestaurantManager
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Orange;
+            this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.btnKoszyk);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(200, 0);
@@ -198,8 +200,17 @@ namespace RestaurantManager
             this.btnWyloguj.UseVisualStyleBackColor = false;
             this.btnWyloguj.Click += new System.EventHandler(this.btnWyloguj_Click);
             // 
+            // userControlMojeDane1
+            // 
+            this.userControlMojeDane1.BackColor = System.Drawing.Color.Beige;
+            this.userControlMojeDane1.Location = new System.Drawing.Point(200, 100);
+            this.userControlMojeDane1.Name = "userControlMojeDane1";
+            this.userControlMojeDane1.Size = new System.Drawing.Size(900, 550);
+            this.userControlMojeDane1.TabIndex = 10;
+            // 
             // userControlKoszyk1
             // 
+            this.userControlKoszyk1.BackColor = System.Drawing.Color.Beige;
             this.userControlKoszyk1.Location = new System.Drawing.Point(200, 100);
             this.userControlKoszyk1.Name = "userControlKoszyk1";
             this.userControlKoszyk1.Size = new System.Drawing.Size(900, 550);
@@ -208,6 +219,7 @@ namespace RestaurantManager
             // 
             // userControlNapoje1
             // 
+            this.userControlNapoje1.BackColor = System.Drawing.Color.Beige;
             this.userControlNapoje1.Location = new System.Drawing.Point(200, 100);
             this.userControlNapoje1.Name = "userControlNapoje1";
             this.userControlNapoje1.Size = new System.Drawing.Size(900, 550);
@@ -215,6 +227,7 @@ namespace RestaurantManager
             // 
             // userControlPrzekaski1
             // 
+            this.userControlPrzekaski1.BackColor = System.Drawing.Color.Beige;
             this.userControlPrzekaski1.Location = new System.Drawing.Point(200, 100);
             this.userControlPrzekaski1.Name = "userControlPrzekaski1";
             this.userControlPrzekaski1.Size = new System.Drawing.Size(900, 550);
@@ -222,6 +235,7 @@ namespace RestaurantManager
             // 
             // userControlZupy1
             // 
+            this.userControlZupy1.BackColor = System.Drawing.Color.Beige;
             this.userControlZupy1.Location = new System.Drawing.Point(200, 100);
             this.userControlZupy1.Name = "userControlZupy1";
             this.userControlZupy1.Size = new System.Drawing.Size(900, 550);
@@ -229,6 +243,7 @@ namespace RestaurantManager
             // 
             // userControlDaniaGlowne1
             // 
+            this.userControlDaniaGlowne1.BackColor = System.Drawing.Color.Beige;
             this.userControlDaniaGlowne1.Location = new System.Drawing.Point(200, 100);
             this.userControlDaniaGlowne1.Name = "userControlDaniaGlowne1";
             this.userControlDaniaGlowne1.Size = new System.Drawing.Size(900, 550);
@@ -236,6 +251,7 @@ namespace RestaurantManager
             // 
             // userControlPizza1
             // 
+            this.userControlPizza1.BackColor = System.Drawing.Color.Beige;
             this.userControlPizza1.Location = new System.Drawing.Point(200, 100);
             this.userControlPizza1.Name = "userControlPizza1";
             this.userControlPizza1.Size = new System.Drawing.Size(900, 550);
@@ -243,17 +259,23 @@ namespace RestaurantManager
             // 
             // userControlDanieDnia1
             // 
+            this.userControlDanieDnia1.BackColor = System.Drawing.Color.Beige;
             this.userControlDanieDnia1.Location = new System.Drawing.Point(200, 100);
             this.userControlDanieDnia1.Name = "userControlDanieDnia1";
             this.userControlDanieDnia1.Size = new System.Drawing.Size(900, 550);
             this.userControlDanieDnia1.TabIndex = 3;
             // 
-            // userControlMojeDane1
+            // label1
             // 
-            this.userControlMojeDane1.Location = new System.Drawing.Point(200, 100);
-            this.userControlMojeDane1.Name = "userControlMojeDane1";
-            this.userControlMojeDane1.Size = new System.Drawing.Size(900, 550);
-            this.userControlMojeDane1.TabIndex = 10;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe Print", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(287, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(300, 84);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Lion Bistro";
             // 
             // FormMenu
             // 
@@ -277,6 +299,7 @@ namespace RestaurantManager
             this.Text = "FormMenu";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -304,5 +327,6 @@ namespace RestaurantManager
         private UserControlNapoje userControlNapoje1;
         private UserControlKoszyk userControlKoszyk1;
         private UserControlMojeDane userControlMojeDane1;
+        private System.Windows.Forms.Label label1;
     }
 }
