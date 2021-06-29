@@ -41,11 +41,13 @@ namespace RestaurantManager
             // 
             // lblZmianaHasla
             // 
+            this.lblZmianaHasla.BackColor = System.Drawing.Color.Orange;
             this.lblZmianaHasla.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblZmianaHasla.Font = new System.Drawing.Font("Segoe Print", 20.25F);
+            this.lblZmianaHasla.Font = new System.Drawing.Font("Segoe Print", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblZmianaHasla.ForeColor = System.Drawing.Color.White;
             this.lblZmianaHasla.Location = new System.Drawing.Point(0, 0);
             this.lblZmianaHasla.Name = "lblZmianaHasla";
-            this.lblZmianaHasla.Size = new System.Drawing.Size(1100, 150);
+            this.lblZmianaHasla.Size = new System.Drawing.Size(1100, 120);
             this.lblZmianaHasla.TabIndex = 1;
             this.lblZmianaHasla.Text = "Zmiana hasła";
             this.lblZmianaHasla.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -88,6 +90,7 @@ namespace RestaurantManager
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Orange;
             this.panel1.Controls.Add(this.btnAnuluj);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 650);
@@ -97,30 +100,33 @@ namespace RestaurantManager
             // 
             // btnAnuluj
             // 
+            this.btnAnuluj.BackColor = System.Drawing.Color.White;
             this.btnAnuluj.Font = new System.Drawing.Font("Segoe Print", 14.25F);
             this.btnAnuluj.Location = new System.Drawing.Point(1000, 0);
             this.btnAnuluj.Name = "btnAnuluj";
             this.btnAnuluj.Size = new System.Drawing.Size(100, 50);
             this.btnAnuluj.TabIndex = 0;
             this.btnAnuluj.Text = "Anuluj";
-            this.btnAnuluj.UseVisualStyleBackColor = true;
+            this.btnAnuluj.UseVisualStyleBackColor = false;
             this.btnAnuluj.Click += new System.EventHandler(this.btnAnuluj_Click);
             // 
             // btnZmienHaslo
             // 
+            this.btnZmienHaslo.BackColor = System.Drawing.Color.White;
             this.btnZmienHaslo.Font = new System.Drawing.Font("Segoe Print", 14.25F);
             this.btnZmienHaslo.Location = new System.Drawing.Point(425, 500);
             this.btnZmienHaslo.Name = "btnZmienHaslo";
             this.btnZmienHaslo.Size = new System.Drawing.Size(250, 60);
             this.btnZmienHaslo.TabIndex = 9;
             this.btnZmienHaslo.Text = "Zmień hasło";
-            this.btnZmienHaslo.UseVisualStyleBackColor = true;
+            this.btnZmienHaslo.UseVisualStyleBackColor = false;
             this.btnZmienHaslo.Click += new System.EventHandler(this.btnZmienHaslo_Click);
             // 
             // FormZmienHaslo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Beige;
             this.ClientSize = new System.Drawing.Size(1100, 700);
             this.Controls.Add(this.btnZmienHaslo);
             this.Controls.Add(this.panel1);

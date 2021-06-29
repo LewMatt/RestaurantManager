@@ -15,6 +15,9 @@ namespace RestaurantManager
         public FormZlozZamowienie()
         {
             InitializeComponent();
+            Color transparentOrange = Color.FromArgb(200, Color.Orange);
+            panel1.BackColor = transparentOrange;
+            lblZamowienie.BackColor = transparentOrange;
         }
 
         public List<ListViewItem> produktyKoszyk = new List<ListViewItem>();

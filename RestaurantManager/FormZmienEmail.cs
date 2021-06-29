@@ -15,6 +15,9 @@ namespace RestaurantManager
         public FormZmienEmail()
         {
             InitializeComponent();
+            Color transparentOrange = Color.FromArgb(200, Color.Orange);
+            panel1.BackColor = transparentOrange;
+            lblZmianaEmail.BackColor = transparentOrange;
             this.Select();
         }
 

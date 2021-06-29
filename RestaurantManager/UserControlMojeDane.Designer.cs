@@ -145,52 +145,57 @@ namespace RestaurantManager
             // 
             // btnZmienHaslo
             // 
+            this.btnZmienHaslo.BackColor = System.Drawing.Color.White;
             this.btnZmienHaslo.Font = new System.Drawing.Font("Segoe Print", 12F);
             this.btnZmienHaslo.Location = new System.Drawing.Point(630, 140);
             this.btnZmienHaslo.Name = "btnZmienHaslo";
             this.btnZmienHaslo.Size = new System.Drawing.Size(200, 50);
             this.btnZmienHaslo.TabIndex = 12;
             this.btnZmienHaslo.Text = "Zmień hasło";
-            this.btnZmienHaslo.UseVisualStyleBackColor = true;
+            this.btnZmienHaslo.UseVisualStyleBackColor = false;
             this.btnZmienHaslo.Click += new System.EventHandler(this.btnZmienHaslo_Click);
             // 
             // btnZmienEmail
             // 
+            this.btnZmienEmail.BackColor = System.Drawing.Color.White;
             this.btnZmienEmail.Font = new System.Drawing.Font("Segoe Print", 12F);
             this.btnZmienEmail.Location = new System.Drawing.Point(630, 230);
             this.btnZmienEmail.Name = "btnZmienEmail";
             this.btnZmienEmail.Size = new System.Drawing.Size(200, 50);
             this.btnZmienEmail.TabIndex = 13;
             this.btnZmienEmail.Text = "Zmień email";
-            this.btnZmienEmail.UseVisualStyleBackColor = true;
+            this.btnZmienEmail.UseVisualStyleBackColor = false;
             this.btnZmienEmail.Click += new System.EventHandler(this.btnZmienEmail_Click);
             // 
             // btnZmienTel
             // 
+            this.btnZmienTel.BackColor = System.Drawing.Color.White;
             this.btnZmienTel.Font = new System.Drawing.Font("Segoe Print", 12F);
             this.btnZmienTel.Location = new System.Drawing.Point(630, 320);
             this.btnZmienTel.Name = "btnZmienTel";
             this.btnZmienTel.Size = new System.Drawing.Size(200, 50);
             this.btnZmienTel.TabIndex = 14;
             this.btnZmienTel.Text = "Zmień nr telefonu";
-            this.btnZmienTel.UseVisualStyleBackColor = true;
+            this.btnZmienTel.UseVisualStyleBackColor = false;
             this.btnZmienTel.Click += new System.EventHandler(this.btnZmienTel_Click);
             // 
             // btnOdswiez
             // 
+            this.btnOdswiez.BackColor = System.Drawing.Color.White;
             this.btnOdswiez.Font = new System.Drawing.Font("Segoe Print", 14.25F);
             this.btnOdswiez.Location = new System.Drawing.Point(375, 460);
             this.btnOdswiez.Name = "btnOdswiez";
             this.btnOdswiez.Size = new System.Drawing.Size(150, 60);
             this.btnOdswiez.TabIndex = 15;
             this.btnOdswiez.Text = "Odśwież";
-            this.btnOdswiez.UseVisualStyleBackColor = true;
+            this.btnOdswiez.UseVisualStyleBackColor = false;
             this.btnOdswiez.Click += new System.EventHandler(this.btnOdswiez_Click);
             // 
             // UserControlMojeDane
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Beige;
             this.Controls.Add(this.btnOdswiez);
             this.Controls.Add(this.btnZmienTel);
             this.Controls.Add(this.btnZmienEmail);

@@ -15,6 +15,9 @@ namespace RestaurantManager
         public FormZmienHaslo()
         {
             InitializeComponent();
+            Color transparentOrange = Color.FromArgb(200, Color.Orange);
+            panel1.BackColor = transparentOrange;
+            lblZmianaHasla.BackColor = transparentOrange;
             this.Select();
         }
 

@@ -15,6 +15,9 @@ namespace RestaurantManager
         public FormMenuAdmin()
         {
             InitializeComponent();
+            Color transparentOrange = Color.FromArgb(200, Color.Orange);
+            panel1.BackColor = transparentOrange;
+            lblPanelAdmin.BackColor = transparentOrange;
         }
 
         public List<ListViewItem> listaElementow = new List<ListViewItem>();

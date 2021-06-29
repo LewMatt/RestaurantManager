@@ -18,6 +18,10 @@ namespace RestaurantManager
         public FormMenu()
         {
             InitializeComponent();
+            Color transparentOrange = Color.FromArgb(200, Color.Orange);
+            panel1.BackColor = transparentOrange;
+            panel2.BackColor = transparentOrange;
+            panel3.BackColor = transparentOrange;
 
             userControlDanieDnia1.BringToFront();
         }

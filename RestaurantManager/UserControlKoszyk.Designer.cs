@@ -57,6 +57,7 @@ namespace RestaurantManager
             this.hProdukty,
             this.hIlosc,
             this.hCena});
+            this.listViewKoszyk.FullRowSelect = true;
             this.listViewKoszyk.HideSelection = false;
             this.listViewKoszyk.Location = new System.Drawing.Point(160, 142);
             this.listViewKoszyk.Name = "listViewKoszyk";
@@ -131,6 +132,7 @@ namespace RestaurantManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Beige;
             this.Controls.Add(this.lblCena);
             this.Controls.Add(this.lblC);
             this.Controls.Add(this.btnZlozZamowienie);

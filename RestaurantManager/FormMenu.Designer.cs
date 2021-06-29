@@ -56,6 +56,7 @@ namespace RestaurantManager
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Orange;
             this.panel1.Controls.Add(this.btnNapoje);
             this.panel1.Controls.Add(this.btnPrzekaski);
             this.panel1.Controls.Add(this.btnZupy);
@@ -70,72 +71,79 @@ namespace RestaurantManager
             // 
             // btnNapoje
             // 
+            this.btnNapoje.BackColor = System.Drawing.Color.White;
             this.btnNapoje.Font = new System.Drawing.Font("Segoe Print", 14.25F);
             this.btnNapoje.Location = new System.Drawing.Point(0, 380);
             this.btnNapoje.Name = "btnNapoje";
             this.btnNapoje.Size = new System.Drawing.Size(200, 70);
             this.btnNapoje.TabIndex = 5;
             this.btnNapoje.Text = "Napoje";
-            this.btnNapoje.UseVisualStyleBackColor = true;
+            this.btnNapoje.UseVisualStyleBackColor = false;
             this.btnNapoje.Click += new System.EventHandler(this.btnNapoje_Click);
             // 
             // btnPrzekaski
             // 
+            this.btnPrzekaski.BackColor = System.Drawing.Color.White;
             this.btnPrzekaski.Font = new System.Drawing.Font("Segoe Print", 14.25F);
             this.btnPrzekaski.Location = new System.Drawing.Point(0, 304);
             this.btnPrzekaski.Name = "btnPrzekaski";
             this.btnPrzekaski.Size = new System.Drawing.Size(200, 70);
             this.btnPrzekaski.TabIndex = 4;
             this.btnPrzekaski.Text = "Przekąski";
-            this.btnPrzekaski.UseVisualStyleBackColor = true;
+            this.btnPrzekaski.UseVisualStyleBackColor = false;
             this.btnPrzekaski.Click += new System.EventHandler(this.btnPrzekaski_Click);
             // 
             // btnZupy
             // 
+            this.btnZupy.BackColor = System.Drawing.Color.White;
             this.btnZupy.Font = new System.Drawing.Font("Segoe Print", 14.25F);
             this.btnZupy.Location = new System.Drawing.Point(0, 228);
             this.btnZupy.Name = "btnZupy";
             this.btnZupy.Size = new System.Drawing.Size(200, 70);
             this.btnZupy.TabIndex = 3;
             this.btnZupy.Text = "Zupy";
-            this.btnZupy.UseVisualStyleBackColor = true;
+            this.btnZupy.UseVisualStyleBackColor = false;
             this.btnZupy.Click += new System.EventHandler(this.btnZupy_Click);
             // 
             // btnDaniaGlowne
             // 
+            this.btnDaniaGlowne.BackColor = System.Drawing.Color.White;
             this.btnDaniaGlowne.Font = new System.Drawing.Font("Segoe Print", 14.25F);
             this.btnDaniaGlowne.Location = new System.Drawing.Point(0, 152);
             this.btnDaniaGlowne.Name = "btnDaniaGlowne";
             this.btnDaniaGlowne.Size = new System.Drawing.Size(200, 70);
             this.btnDaniaGlowne.TabIndex = 2;
             this.btnDaniaGlowne.Text = "Dania główne";
-            this.btnDaniaGlowne.UseVisualStyleBackColor = true;
+            this.btnDaniaGlowne.UseVisualStyleBackColor = false;
             this.btnDaniaGlowne.Click += new System.EventHandler(this.btnDaniaGlowne_Click);
             // 
             // btnPizza
             // 
+            this.btnPizza.BackColor = System.Drawing.Color.White;
             this.btnPizza.Font = new System.Drawing.Font("Segoe Print", 14.25F);
             this.btnPizza.Location = new System.Drawing.Point(0, 76);
             this.btnPizza.Name = "btnPizza";
             this.btnPizza.Size = new System.Drawing.Size(200, 70);
             this.btnPizza.TabIndex = 1;
             this.btnPizza.Text = "Pizza";
-            this.btnPizza.UseVisualStyleBackColor = true;
+            this.btnPizza.UseVisualStyleBackColor = false;
             this.btnPizza.Click += new System.EventHandler(this.btnPizza_Click);
             // 
             // btnDanieDnia
             // 
+            this.btnDanieDnia.BackColor = System.Drawing.Color.White;
             this.btnDanieDnia.Font = new System.Drawing.Font("Segoe Print", 14.25F);
             this.btnDanieDnia.Location = new System.Drawing.Point(0, 0);
             this.btnDanieDnia.Name = "btnDanieDnia";
             this.btnDanieDnia.Size = new System.Drawing.Size(200, 70);
             this.btnDanieDnia.TabIndex = 0;
             this.btnDanieDnia.Text = "Danie dnia";
-            this.btnDanieDnia.UseVisualStyleBackColor = true;
+            this.btnDanieDnia.UseVisualStyleBackColor = false;
             this.btnDanieDnia.Click += new System.EventHandler(this.btnDanieDnia_Click);
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.Orange;
             this.panel2.Controls.Add(this.btnKoszyk);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(200, 0);
@@ -145,17 +153,19 @@ namespace RestaurantManager
             // 
             // btnKoszyk
             // 
+            this.btnKoszyk.BackColor = System.Drawing.Color.White;
             this.btnKoszyk.Font = new System.Drawing.Font("Segoe Print", 14.25F);
             this.btnKoszyk.Location = new System.Drawing.Point(800, 0);
             this.btnKoszyk.Name = "btnKoszyk";
             this.btnKoszyk.Size = new System.Drawing.Size(100, 100);
             this.btnKoszyk.TabIndex = 0;
             this.btnKoszyk.Text = "Koszyk";
-            this.btnKoszyk.UseVisualStyleBackColor = true;
+            this.btnKoszyk.UseVisualStyleBackColor = false;
             this.btnKoszyk.Click += new System.EventHandler(this.btnKoszyk_Click);
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.Orange;
             this.panel3.Controls.Add(this.btnMojeDane);
             this.panel3.Controls.Add(this.btnWyloguj);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -166,24 +176,26 @@ namespace RestaurantManager
             // 
             // btnMojeDane
             // 
+            this.btnMojeDane.BackColor = System.Drawing.Color.White;
             this.btnMojeDane.Font = new System.Drawing.Font("Segoe Print", 14.25F);
             this.btnMojeDane.Location = new System.Drawing.Point(0, 0);
             this.btnMojeDane.Name = "btnMojeDane";
             this.btnMojeDane.Size = new System.Drawing.Size(150, 50);
             this.btnMojeDane.TabIndex = 1;
             this.btnMojeDane.Text = "Moje dane";
-            this.btnMojeDane.UseVisualStyleBackColor = true;
+            this.btnMojeDane.UseVisualStyleBackColor = false;
             this.btnMojeDane.Click += new System.EventHandler(this.btnMojeDane_Click);
             // 
             // btnWyloguj
             // 
+            this.btnWyloguj.BackColor = System.Drawing.Color.White;
             this.btnWyloguj.Font = new System.Drawing.Font("Segoe Print", 14.25F);
             this.btnWyloguj.Location = new System.Drawing.Point(800, 0);
             this.btnWyloguj.Name = "btnWyloguj";
             this.btnWyloguj.Size = new System.Drawing.Size(100, 50);
             this.btnWyloguj.TabIndex = 0;
             this.btnWyloguj.Text = "Wyloguj";
-            this.btnWyloguj.UseVisualStyleBackColor = true;
+            this.btnWyloguj.UseVisualStyleBackColor = false;
             this.btnWyloguj.Click += new System.EventHandler(this.btnWyloguj_Click);
             // 
             // userControlKoszyk1
@@ -191,6 +203,7 @@ namespace RestaurantManager
             this.userControlKoszyk1.Location = new System.Drawing.Point(200, 100);
             this.userControlKoszyk1.Name = "userControlKoszyk1";
             this.userControlKoszyk1.Size = new System.Drawing.Size(900, 550);
+            this.userControlKoszyk1.suma_koszyk = 0;
             this.userControlKoszyk1.TabIndex = 9;
             // 
             // userControlNapoje1

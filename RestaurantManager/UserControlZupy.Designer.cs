@@ -108,6 +108,7 @@ namespace RestaurantManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Beige;
             this.Controls.Add(this.btnDodajDoKoszyka);
             this.Controls.Add(this.textBoxIleSztuk);
             this.Controls.Add(this.lblIleSztuk);

@@ -15,6 +15,9 @@ namespace RestaurantManager
         public FormZmienTelefon()
         {
             InitializeComponent();
+            Color transparentOrange = Color.FromArgb(200, Color.Orange);
+            panel1.BackColor = transparentOrange;
+            lblZmianaTel.BackColor = transparentOrange;
         }
 
         public int my_id;

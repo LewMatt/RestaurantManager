@@ -40,11 +40,12 @@ namespace RestaurantManager
             // 
             // lblZmianaEmail
             // 
+            this.lblZmianaEmail.BackColor = System.Drawing.Color.Orange;
             this.lblZmianaEmail.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblZmianaEmail.Font = new System.Drawing.Font("Segoe Print", 20.25F);
+            this.lblZmianaEmail.Font = new System.Drawing.Font("Segoe Print", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lblZmianaEmail.Location = new System.Drawing.Point(0, 0);
             this.lblZmianaEmail.Name = "lblZmianaEmail";
-            this.lblZmianaEmail.Size = new System.Drawing.Size(1100, 150);
+            this.lblZmianaEmail.Size = new System.Drawing.Size(1100, 120);
             this.lblZmianaEmail.TabIndex = 2;
             this.lblZmianaEmail.Text = "Zmiana email";
             this.lblZmianaEmail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -75,17 +76,20 @@ namespace RestaurantManager
             // 
             // btnZmienEmail
             // 
+            this.btnZmienEmail.BackColor = System.Drawing.Color.White;
             this.btnZmienEmail.Font = new System.Drawing.Font("Segoe Print", 14.25F);
+            this.btnZmienEmail.ForeColor = System.Drawing.Color.Black;
             this.btnZmienEmail.Location = new System.Drawing.Point(425, 500);
             this.btnZmienEmail.Name = "btnZmienEmail";
             this.btnZmienEmail.Size = new System.Drawing.Size(250, 60);
             this.btnZmienEmail.TabIndex = 10;
             this.btnZmienEmail.Text = "Zmień email";
-            this.btnZmienEmail.UseVisualStyleBackColor = true;
+            this.btnZmienEmail.UseVisualStyleBackColor = false;
             this.btnZmienEmail.Click += new System.EventHandler(this.btnZmienEmail_Click);
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Orange;
             this.panel1.Controls.Add(this.btnAnuluj);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 650);
@@ -95,25 +99,29 @@ namespace RestaurantManager
             // 
             // btnAnuluj
             // 
+            this.btnAnuluj.BackColor = System.Drawing.Color.White;
             this.btnAnuluj.Font = new System.Drawing.Font("Segoe Print", 14.25F);
+            this.btnAnuluj.ForeColor = System.Drawing.Color.Black;
             this.btnAnuluj.Location = new System.Drawing.Point(1000, 0);
             this.btnAnuluj.Name = "btnAnuluj";
             this.btnAnuluj.Size = new System.Drawing.Size(100, 50);
             this.btnAnuluj.TabIndex = 0;
             this.btnAnuluj.Text = "Anuluj";
-            this.btnAnuluj.UseVisualStyleBackColor = true;
+            this.btnAnuluj.UseVisualStyleBackColor = false;
             this.btnAnuluj.Click += new System.EventHandler(this.btnAnuluj_Click);
             // 
             // FormZmienEmail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Beige;
             this.ClientSize = new System.Drawing.Size(1100, 700);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnZmienEmail);
             this.Controls.Add(this.textBoxHaslo);
             this.Controls.Add(this.textBoxEmail);
             this.Controls.Add(this.lblZmianaEmail);
+            this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormZmienEmail";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

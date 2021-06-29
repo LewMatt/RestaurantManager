@@ -16,6 +16,8 @@ namespace RestaurantManager
         public FormCreateAccount()
         {
             InitializeComponent();
+            Color transparentOrange = Color.FromArgb(200, Color.Orange);
+            panel1.BackColor = transparentOrange;
         }
 
         private void btnPowrot_Click(object sender, EventArgs e)

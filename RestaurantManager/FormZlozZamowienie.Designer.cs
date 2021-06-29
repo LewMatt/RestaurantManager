@@ -44,6 +44,7 @@ namespace RestaurantManager
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Orange;
             this.panel1.Controls.Add(this.btnAnuluj);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 650);
@@ -53,22 +54,25 @@ namespace RestaurantManager
             // 
             // btnAnuluj
             // 
+            this.btnAnuluj.BackColor = System.Drawing.Color.White;
             this.btnAnuluj.Font = new System.Drawing.Font("Segoe Print", 14.25F);
             this.btnAnuluj.Location = new System.Drawing.Point(1000, 0);
             this.btnAnuluj.Name = "btnAnuluj";
             this.btnAnuluj.Size = new System.Drawing.Size(100, 50);
             this.btnAnuluj.TabIndex = 0;
             this.btnAnuluj.Text = "Anuluj";
-            this.btnAnuluj.UseVisualStyleBackColor = true;
+            this.btnAnuluj.UseVisualStyleBackColor = false;
             this.btnAnuluj.Click += new System.EventHandler(this.btnAnuluj_Click);
             // 
             // lblZamowienie
             // 
+            this.lblZamowienie.BackColor = System.Drawing.Color.Orange;
             this.lblZamowienie.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblZamowienie.Font = new System.Drawing.Font("Segoe Print", 20.25F);
+            this.lblZamowienie.Font = new System.Drawing.Font("Segoe Print", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblZamowienie.ForeColor = System.Drawing.Color.White;
             this.lblZamowienie.Location = new System.Drawing.Point(0, 0);
             this.lblZamowienie.Name = "lblZamowienie";
-            this.lblZamowienie.Size = new System.Drawing.Size(1100, 150);
+            this.lblZamowienie.Size = new System.Drawing.Size(1100, 120);
             this.lblZamowienie.TabIndex = 14;
             this.lblZamowienie.Text = "Podaj adres zamówienia";
             this.lblZamowienie.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -132,19 +136,21 @@ namespace RestaurantManager
             // 
             // btnZamow
             // 
+            this.btnZamow.BackColor = System.Drawing.Color.White;
             this.btnZamow.Font = new System.Drawing.Font("Segoe Print", 14.25F);
             this.btnZamow.Location = new System.Drawing.Point(425, 500);
             this.btnZamow.Name = "btnZamow";
             this.btnZamow.Size = new System.Drawing.Size(250, 60);
             this.btnZamow.TabIndex = 21;
             this.btnZamow.Text = "Zamów";
-            this.btnZamow.UseVisualStyleBackColor = true;
+            this.btnZamow.UseVisualStyleBackColor = false;
             this.btnZamow.Click += new System.EventHandler(this.btnZamow_Click);
             // 
             // FormZlozZamowienie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Beige;
             this.ClientSize = new System.Drawing.Size(1100, 700);
             this.Controls.Add(this.btnZamow);
             this.Controls.Add(this.labelMiasto);

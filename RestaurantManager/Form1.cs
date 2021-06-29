@@ -17,6 +17,9 @@ namespace RestaurantManager
         public Form1()
         {
             InitializeComponent();
+            Color transparentOrange = Color.FromArgb(200, Color.Orange);
+            panel1.BackColor = transparentOrange;
+            lblRestaurantManager.BackColor = transparentOrange;
         }
 
         private void btnExit_Click(object sender, EventArgs e)

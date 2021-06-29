@@ -41,9 +41,10 @@ namespace RestaurantManager
             // 
             // lblRestaurantManager
             // 
+            this.lblRestaurantManager.BackColor = System.Drawing.Color.Orange;
             this.lblRestaurantManager.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblRestaurantManager.Font = new System.Drawing.Font("Segoe Print", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblRestaurantManager.ForeColor = System.Drawing.Color.Black;
+            this.lblRestaurantManager.ForeColor = System.Drawing.Color.White;
             this.lblRestaurantManager.Location = new System.Drawing.Point(0, 0);
             this.lblRestaurantManager.Name = "lblRestaurantManager";
             this.lblRestaurantManager.Size = new System.Drawing.Size(1100, 140);
@@ -53,6 +54,7 @@ namespace RestaurantManager
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Orange;
             this.panel1.Controls.Add(this.btnExit);
             this.panel1.Controls.Add(this.btnUtworzKonto);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -63,24 +65,26 @@ namespace RestaurantManager
             // 
             // btnExit
             // 
+            this.btnExit.BackColor = System.Drawing.Color.White;
             this.btnExit.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnExit.Location = new System.Drawing.Point(1000, 0);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(100, 50);
             this.btnExit.TabIndex = 1;
             this.btnExit.Text = "Wyjście";
-            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnUtworzKonto
             // 
+            this.btnUtworzKonto.BackColor = System.Drawing.Color.White;
             this.btnUtworzKonto.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnUtworzKonto.Location = new System.Drawing.Point(0, 0);
             this.btnUtworzKonto.Name = "btnUtworzKonto";
             this.btnUtworzKonto.Size = new System.Drawing.Size(200, 50);
             this.btnUtworzKonto.TabIndex = 0;
             this.btnUtworzKonto.Text = "Utwórz konto";
-            this.btnUtworzKonto.UseVisualStyleBackColor = true;
+            this.btnUtworzKonto.UseVisualStyleBackColor = false;
             this.btnUtworzKonto.Click += new System.EventHandler(this.btnUtworzKonto_Click);
             // 
             // textBoxLogin
@@ -109,19 +113,21 @@ namespace RestaurantManager
             // 
             // btnLogin
             // 
+            this.btnLogin.BackColor = System.Drawing.Color.White;
             this.btnLogin.Font = new System.Drawing.Font("Segoe Print", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnLogin.Location = new System.Drawing.Point(425, 480);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(250, 50);
             this.btnLogin.TabIndex = 6;
             this.btnLogin.Text = "Zaloguj";
-            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Beige;
             this.ClientSize = new System.Drawing.Size(1100, 700);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.textBoxPassword);

@@ -58,6 +58,7 @@ namespace RestaurantManager
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Orange;
             this.panel1.Controls.Add(this.btnWyloguj);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 650);
@@ -67,20 +68,22 @@ namespace RestaurantManager
             // 
             // btnWyloguj
             // 
-            this.btnWyloguj.Font = new System.Drawing.Font("Segoe Print", 12F);
+            this.btnWyloguj.BackColor = System.Drawing.Color.White;
+            this.btnWyloguj.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnWyloguj.Location = new System.Drawing.Point(1000, 0);
             this.btnWyloguj.Name = "btnWyloguj";
             this.btnWyloguj.Size = new System.Drawing.Size(100, 50);
             this.btnWyloguj.TabIndex = 0;
             this.btnWyloguj.Text = "Wyloguj";
-            this.btnWyloguj.UseVisualStyleBackColor = true;
+            this.btnWyloguj.UseVisualStyleBackColor = false;
             this.btnWyloguj.Click += new System.EventHandler(this.btnWyloguj_Click);
             // 
             // lblPanelAdmin
             // 
+            this.lblPanelAdmin.BackColor = System.Drawing.Color.Orange;
             this.lblPanelAdmin.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblPanelAdmin.Font = new System.Drawing.Font("Segoe Print", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblPanelAdmin.ForeColor = System.Drawing.Color.Black;
+            this.lblPanelAdmin.Font = new System.Drawing.Font("Segoe Print", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblPanelAdmin.ForeColor = System.Drawing.Color.White;
             this.lblPanelAdmin.Location = new System.Drawing.Point(0, 0);
             this.lblPanelAdmin.Name = "lblPanelAdmin";
             this.lblPanelAdmin.Size = new System.Drawing.Size(1100, 100);
@@ -263,30 +266,33 @@ namespace RestaurantManager
             // 
             // btnPokaz
             // 
+            this.btnPokaz.BackColor = System.Drawing.Color.White;
             this.btnPokaz.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnPokaz.Location = new System.Drawing.Point(279, 541);
             this.btnPokaz.Name = "btnPokaz";
             this.btnPokaz.Size = new System.Drawing.Size(200, 50);
             this.btnPokaz.TabIndex = 16;
             this.btnPokaz.Text = "Pokaż zamówienie";
-            this.btnPokaz.UseVisualStyleBackColor = true;
+            this.btnPokaz.UseVisualStyleBackColor = false;
             this.btnPokaz.Click += new System.EventHandler(this.btnPokaz_Click);
             // 
             // btnZrealizuj
             // 
+            this.btnZrealizuj.BackColor = System.Drawing.Color.White;
             this.btnZrealizuj.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnZrealizuj.Location = new System.Drawing.Point(590, 541);
             this.btnZrealizuj.Name = "btnZrealizuj";
             this.btnZrealizuj.Size = new System.Drawing.Size(200, 50);
             this.btnZrealizuj.TabIndex = 17;
             this.btnZrealizuj.Text = "Zrealizuj zamówienie";
-            this.btnZrealizuj.UseVisualStyleBackColor = true;
+            this.btnZrealizuj.UseVisualStyleBackColor = false;
             this.btnZrealizuj.Click += new System.EventHandler(this.btnZrealizuj_Click);
             // 
             // FormMenuAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Beige;
             this.ClientSize = new System.Drawing.Size(1100, 700);
             this.Controls.Add(this.btnZrealizuj);
             this.Controls.Add(this.btnPokaz);
